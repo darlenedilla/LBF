@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700|Lato:400,700');
+
+* {
+    box-sizing: border-box;
+}
+
+.largeBtn{
+    height: 37px;
+    width: 295px;
+    border-radius: 5px;
+    background-color: #5FA8D3;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #FCFCFC;
+    border: none;
+}
+
+.largeBtn:hover{
+    background-color: #A7CFE7;
+}
+
+i {
+    border: solid #FCFCFC;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 1px;
+    position: relative;
+    right: -60px;
+}
+
+.arrowRight {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrowDown {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
+.dropdown{
+    -webkit-appearance: none;
+}
+
+.inputBox, .dropdown{
+    height: 37px;
+    width: 143px;
+    border-radius: 5px;
+    background-color: #EFEFEF;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #0D1B1E;
+    margin-bottom: 15px;
+    margin-right: 7px;
+}
+

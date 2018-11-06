@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var getParams = function (url) {
     var params = {};
     var parser = document.createElement('a');
@@ -34,7 +33,6 @@ var getParams = function (url) {
 
 
 
-=======
 // HERE STARTS GRID JSCRIPT
 
 
@@ -135,4 +133,3 @@ var getParams = function (url) {
     function followUsFooterOut(){
       document.getElementById('followUs').style.opacity="0";
     }
->>>>>>> d1df83e1e1a68f48f36ec449b0b5cfd5ad56e1a8

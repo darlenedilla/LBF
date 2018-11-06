@@ -6,7 +6,6 @@
     padding: 0;
 }
 
-<<<<<<< HEAD
 #membershipHeading, #paymentHeading, #thankyouHeading{
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
@@ -28,7 +27,8 @@
 .submitBtn, .linkBtn{
     height: 40px;
     width: 300px;
-=======
+}
+
 body {
   background-color:#fcfcfc;
   display:block;
@@ -46,7 +46,6 @@ body {
 .largeBtn{
     height: 37px;
     width: 295px;
->>>>>>> d1df83e1e1a68f48f36ec449b0b5cfd5ad56e1a8
     border-radius: 5px;
     background-color: #5FA8D3;
     font-family: 'Exo 2', sans-serif;
@@ -134,11 +133,9 @@ body {
 }
 
 
-<<<<<<< HEAD
 
 
 
-=======
 /* mini - menu css - NANNA */
 #mini-menu {
   position:sticky;
@@ -398,4 +395,3 @@ footer {
     transition-duration:0.5s;
   }
 }
->>>>>>> d1df83e1e1a68f48f36ec449b0b5cfd5ad56e1a8

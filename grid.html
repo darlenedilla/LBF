@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <title>Atoms:Grid</title>
+</head>
+<body id="nanna-grid-body">
+
+
+<section id="bigGridWrapper">
+
+
+    <!-- start of mini-menu -->
+    <section id="mini-menu">
+        <ul class="mini-menu-wrapper">
+          <li class="mini-menu-item" id="miniMenuEvents" onclick="miniMenuClickEvents()">Events</li>
+          <li class="mini-menu-item" id="miniMenuNews" onclick="miniMenuClickNews()">News</li>
+        </ul>
+    </section>
+
+<!-- start of EVENTgrid -->
+<section id="gridWrapper">
+    <div class="grid-colum">
+              <div class="gridBox" onmouseover="gridOverlayPull(this)" onmouseout="gridOverlayNoPull(this)">
+              <div class="gridOverlay">
+                <h2>Djur's Sommerland</h2>
+                <h3>29 Maj 2019</h3>
+              <div class="gridOverlayPuller"><div class="pullerArrow">&#8250;</div></div></div>
+              <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
+            </div>
+
+            <div class="gridBox" onmouseover="gridOverlayPull()" onmouseout="gridOverlayNoPull()">
+            <div class="gridOverlay">
+              <h2>Djur's Sommerland</h2>
+              <h3>29 Maj 2019</h3>
+            <div class="gridOverlayPuller"><div class="pullerArrow">&#8250;</div></div></div>
+            <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
+          </div>
+
+          <div class="gridBox" onmouseover="gridOverlayPull()" onmouseout="gridOverlayNoPull()">
+          <div class="gridOverlay">
+            <h2>Djur's Sommerland</h2>
+            <h3>29 Maj 2019</h3>
+          <div class="gridOverlayPuller"><div class="pullerArrow">&#8250;</div></div></div>
+          <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
+        </div>
+
+  </div>
+
+</section>
+
+<!-- start of NEWSgrid -->
+<section id="gridWrapperNews">
+    <div class="grid-colum">
+                <div class="gridBox" onmouseover="gridOverlayPull()" onmouseout="gridOverlayNoPull()">
+                <div class="gridOverlay">
+                  <h2>UCL er cool</h2>
+                  <h3>29 Maj 2019</h3>
+                <div class="gridOverlayPuller"><div class="pullerArrow">&#8250;</div></div></div>
+                <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
+              </div>
+
+              <div class="gridBox" onmouseover="gridOverlayPull()" onmouseout="gridOverlayNoPull()">
+              <div class="gridOverlay">
+                <h2>UCL er cool</h2>
+                <h3>29 Maj 2019</h3>
+              <div class="gridOverlayPuller"><div class="pullerArrow">&#8250;</div></div></div>
+              <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
+            </div>
+
+            <div class="gridBox" onmouseover="gridOverlayPull()" onmouseout="gridOverlayNoPull()">
+            <div class="gridOverlay">
+              <h2>UCL er cool</h2>
+              <h3>29 Maj 2019</h3>
+            <div class="gridOverlayPuller"><div class="pullerArrow">&#8250;</div></div></div>
+            <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
+          </div>
+
+    </div>
+
+</section>
+</section>
+
+</body>

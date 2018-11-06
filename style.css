@@ -6,6 +6,21 @@
     padding: 0;
 }
 
+body {
+    background-color:#fcfcfc;
+    display:block;
+    box-sizing:border-box;
+    height:100%;
+    min-height:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:0;
+    margin:0;
+  }
+
+/***********START OPRET MEDLEMSKAB OG FAKTURA - DARLENE**************/
 #membershipHeading, #paymentHeading, #thankyouHeading{
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
@@ -27,20 +42,6 @@
 .submitBtn, .linkBtn{
     height: 40px;
     width: 300px;
-}
-
-body {
-  background-color:#fcfcfc;
-  display:block;
-  box-sizing:border-box;
-  height:100%;
-  min-height:100%;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  padding:0;
-  margin:0;
 }
 
 .largeBtn{
@@ -95,6 +96,9 @@ body {
 .full{
     width: 300px;
 }
+/***********SLUT OPRET MEDLEMSKAB OG FAKTURA - DARLENE**************/
+
+/***********START TAK FOR DIN ANMODNING - DARLENE**************/
 
 #thankYouName, #thankYouText1, #thankYouText2{
     width: 300px;
@@ -132,8 +136,7 @@ body {
     bottom: 110px;
 }
 
-
-
+/***********SLUT TAK FOR DIN ANMODNING - DARLENE**************/
 
 
 /* mini - menu css - NANNA */

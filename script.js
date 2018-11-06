@@ -1,3 +1,6 @@
+/*UDFYLD FORMULAR AUTOMATISK - DARLENE*/
+
+//Tager værdierne fra formularen, som er gemt i URL'en
 var getParams = function (url) {
     var params = {};
     var parser = document.createElement('a');
@@ -11,9 +14,10 @@ var getParams = function (url) {
         return params;
     };
 
-
+    //Danner objekt ud fra værdier i URL
     object = getParams(window.location.href);
 
+    //Tager værdi fra hvert element i oprettelsesformular og sætter dem ind i fakturaformular
     function fillForm(){
         var oldAddress = object.address;
         var newAddress = oldAddress.replace(/[\+,]/g, " ");
@@ -25,6 +29,7 @@ var getParams = function (url) {
         document.getElementById("address").value = newAddress;
     }
 
+    //Indsætter navn fra formular i "Tak for anmodning"-page
     function thankYou(){
         thankYouName = "Tak for din støtte " + object.firstname + " " + object.lastname + ".";
         thankYouElement = document.getElementById("thankYouName");

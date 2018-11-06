@@ -2,11 +2,31 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.largeBtn{
-    height: 37px;
-    width: 295px;
+#membershipHeading, #paymentHeading, #thankyouHeading{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #0d1b1e;
+    text-align: center;
+    margin-top: 20%;
+}
+
+#signUpForm, #paymentForm{
+    width: 310px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+}
+
+.submitBtn, .linkBtn{
+    height: 40px;
+    width: 300px;
     border-radius: 5px;
     background-color: #5FA8D3;
     font-family: 'Exo 2', sans-serif;
@@ -16,44 +36,84 @@
     border: none;
 }
 
-.largeBtn:hover{
+.submitBtn:hover{
     background-color: #A7CFE7;
 }
 
-i {
-    border: solid #FCFCFC;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
-    border-radius: 1px;
-    position: relative;
-    right: -60px;
+.fa-chevron-right{
+    font-size: 1em;
+    color: #FCFCFC;
+    margin-left: 10px;
+    display: inline;
 }
 
-.arrowRight {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}
-
-.arrowDown {
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-}
-
-.dropdown{
-    -webkit-appearance: none;
-}
 
 .inputBox, .dropdown{
-    height: 37px;
-    width: 143px;
+    height: 40px;
     border-radius: 5px;
     background-color: #EFEFEF;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #0D1B1E;
     margin-bottom: 15px;
     margin-right: 7px;
+    padding: 6px;
 }
+
+.medium{
+    width: 145px;
+}
+
+.large{
+    width: 170px;
+}
+
+.small{
+    width: 120px;
+}
+
+.full{
+    width: 300px;
+}
+
+#thankYouName, #thankYouText1, #thankYouText2{
+    width: 300px;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #0D1B1E;
+    padding-top: 25px;
+    margin: auto;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+#thankYouText1{
+    margin-top: 10px;
+}
+#thankYouText2{
+    margin-top: 55px;
+}
+
+.linkBtn{
+    position: relative;
+    margin-top: 10px;
+}
+
+#lastPageWrapper{
+    width: 300px;
+    height: 500px;
+    margin: auto;
+}
+
+#btnWrapper{
+    position: absolute;
+    bottom: 110px;
+}
+
+
+
+
 

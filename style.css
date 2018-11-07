@@ -1,59 +1,129 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2:400,700|Lato:400,700');
 
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
 }
 
-.largeBtn{
-    height: 37px;
-    width: 295px;
-    border-radius: 5px;
-    background-color: #5FA8D3;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 700;
-    font-size: 1.2em;
-    color: #FCFCFC;
-    border: none;
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: #fcfcfc;
 }
 
-.largeBtn:hover{
-    background-color: #A7CFE7;
+
+
+.search-btn i {
+  position: fixed;
+  right: 25px;
+  top: 15px;
+  font-size: 35px;
+  color: #fcfcfc;
+  cursor: pointer;
 }
 
-i {
-    border: solid #FCFCFC;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
-    border-radius: 1px;
+nav.desk ul input {
+  width: 160px;
+  float: right;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+
+.container nav.desk,
+.container nav.mob{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #5FA8D3;
+  height: 60px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+nav.desk ul {
+  list-style: none;
+  height: 60px;
+  margin: 0 auto;
+}
+
+nav.desk ul li {
+  width: 160px;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav.desk ul li:hover,
+nav.mob ul li:hover{
+  background: #efefef;
+}
+
+nav.desk ul li.active,
+nav.mob ul li.active{
+  background: #efefef;
+}
+
+nav ul li a {
+  color: #fcfcfc;
+  text-decoration: none;
+}
+nav ul li.active a,
+nav ul li:hover a {
+  color: #0d1b1e;
+  text-decoration: none;
+}
+
+.mob,
+.hamburger-btn {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  nav.desk {
+    display: none;
+  }
+
+  nav.mob,
+  .hamburger-btn {
+    display: block;
+  }
+
+  .hamburger-btn {
     position: relative;
-    right: -60px;
-}
+  }
 
-.arrowRight {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}
+  .hamburger-btn .fa-bars,
+  .hamburger-btn .fa-times {
+    position: fixed;
+    left: 25px;
+    top: 15px;
+    font-size: 35px;
+    color: #fcfcfc;
+    cursor: pointer;
+  }
 
-.arrowDown {
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-}
+  .mob ul{
+    margin-top: 60px;
+    background: #5FA8D3;
+    display: none;
+  }
 
-.dropdown{
-    -webkit-appearance: none;
-}
+  .mob li {
+    padding: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
 
-.inputBox, .dropdown{
-    height: 37px;
-    width: 143px;
-    border-radius: 5px;
-    background-color: #EFEFEF;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 1.2em;
-    color: #0D1B1E;
-    margin-bottom: 15px;
-    margin-right: 7px;
+  .mob ul.active {
+    display: block;
+  }
 }
-

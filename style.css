@@ -21,7 +21,7 @@ body {
   }
 
 /***********START OPRET MEDLEMSKAB OG FAKTURA - DARLENE**************/
-#membershipHeading, #paymentHeading, #thankyouHeading{
+#membershipHeading, #paymentHeading, #thankYouHeading{
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
     font-size: 1.5em;
@@ -236,7 +236,7 @@ nav ul li:hover a {
     margin-top: 10px;
 }
 #thankYouText2{
-    margin-top: 55px;
+    margin-top: 75px;
 }
 
 .link{

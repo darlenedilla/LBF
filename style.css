@@ -197,47 +197,6 @@ nav ul li:hover a {
   display: none;
 }
 
-@media screen and (max-width: 700px) {
-  nav.desk {
-    display: none;
-  }
-
-  nav.mob,
-  .hamburger-btn {
-    display: block;
-  }
-
-  .hamburger-btn {
-    position: relative;
-  }
-
-  .hamburger-btn .fa-bars,
-  .hamburger-btn .fa-times {
-    position: fixed;
-    left: 25px;
-    top: 15px;
-    font-size: 35px;
-    color: #fcfcfc;
-    cursor: pointer;
-  }
-
-  .mob ul{
-    margin-top: 60px;
-    background: #5FA8D3;
-    display: none;
-  }
-
-  .mob li {
-    padding: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 700;
-  }
-
-  .mob ul.active {
-    display: block;
-  }
 
   /************SLUT MENU BAR - JONAS**************/
 
@@ -543,4 +502,46 @@ footer {
     transition-duration:0.5s;
   }
 }
+
+@media screen and (max-width: 700px) {
+  nav.desk {
+    display: none;
+  }
+
+  nav.mob,
+  .hamburger-btn {
+    display: block;
+  }
+
+  .hamburger-btn {
+    position: relative;
+  }
+
+  .hamburger-btn .fa-bars,
+  .hamburger-btn .fa-times {
+    position: fixed;
+    left: 25px;
+    top: 15px;
+    font-size: 35px;
+    color: #fcfcfc;
+    cursor: pointer;
+  }
+
+  .mob ul{
+    margin-top: 60px;
+    background: #5FA8D3;
+    display: none;
+  }
+
+  .mob li {
+    padding: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+  }
+
+  .mob ul.active {
+    display: block;
+  }
 }

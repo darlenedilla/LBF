@@ -1,28 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2:400,700|Lato:400,700');
 
 * {
-<<<<<<< HEAD
   margin: 0;
   padding: 0;
   user-select: none;
-=======
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
 }
 
 body {
     background-color:#fcfcfc;
     display:block;
-    box-sizing:border-box;
     height:100%;
     min-height:100%;
     top:0;
     bottom:0;
     left:0;
     right:0;
-    padding:0;
-    margin:0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
   }
 
 /***********START OPRET MEDLEMSKAB OG FAKTURA - DARLENE**************/
@@ -47,18 +42,90 @@ body {
 .submit, .link{
     height: 40px;
     width: 300px;
->>>>>>> 9ce4b0b32363e5977bb6e94c5668833e721da0b8
 }
 
-body {
-  font-family: "Exo 2", sans-serif;
-  background-color: #fcfcfc;
+.largeBtn{
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: #5FA8D3;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #FCFCFC;
+  border: none;
 }
 
-<<<<<<< HEAD
+.largeBtn:hover{
+  background-color: #A7CFE7;
+}
 
 
-.search-btn i {
+.inputBox, .dropdown{
+  height: 40px;
+  border-radius: 5px;
+  background-color: #EFEFEF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #0D1B1E;
+  margin-bottom: 15px;
+  margin-right: 7px;
+  padding: 6px;
+}
+
+
+.medium{
+  width: 145px;
+  margin-top: 10px;
+}
+
+.large{
+  width: 170px;
+}
+
+.small{
+  width: 120px;
+}
+
+.full{
+  width: 300px;
+}
+
+#dropdownHeading{
+  font-weight: 700;
+}
+
+
+
+.fa-chevron-right{
+  font-size: 1em;
+  color: #FCFCFC;
+  margin-left: 10px;
+  display: inline;
+}
+
+
+/***********SLUT OPRET MEDLEMSKAB OG FAKTURA - DARLENE**************/
+
+
+
+
+
+/************START MENU BAR - JONAS**************/
+
+.fa .fa-search, .fa .fa-bars, .fa .fa-bars {
+  border: solid #FCFCFC;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 1px;
+  position: relative;
+  right: -60px;
+}
+
+
+.search-btn .fa-search {
   position: fixed;
   right: 25px;
   top: 15px;
@@ -67,7 +134,7 @@ body {
   cursor: pointer;
 }
 
-nav.desk ul input {
+nav.desk ul searchInput {
   width: 160px;
   float: right;
   text-align: center;
@@ -105,6 +172,8 @@ nav.desk ul li {
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
 }
 
 nav.desk ul li:hover,
@@ -120,6 +189,8 @@ nav.mob ul li.active{
 nav ul li a {
   color: #fcfcfc;
   text-decoration: none;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
 }
 nav ul li.active a,
 nav ul li:hover a {
@@ -132,86 +203,10 @@ nav ul li:hover a {
   display: none;
 }
 
-@media screen and (max-width: 700px) {
-  nav.desk {
-    display: none;
-  }
 
-  nav.mob,
-  .hamburger-btn {
-    display: block;
-  }
-
-  .hamburger-btn {
-    position: relative;
-  }
-
-  .hamburger-btn .fa-bars,
-  .hamburger-btn .fa-times {
-    position: fixed;
-    left: 25px;
-    top: 15px;
-    font-size: 35px;
-    color: #fcfcfc;
-    cursor: pointer;
-  }
-
-  .mob ul{
-    margin-top: 60px;
-    background: #5FA8D3;
-    display: none;
-  }
-
-  .mob li {
-    padding: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-
-  .mob ul.active {
-    display: block;
-=======
-.submitBtn:hover{
-    background-color: #A7CFE7;
-}
-
-.fa-chevron-right{
-    font-size: 1em;
-    color: #FCFCFC;
-    margin-left: 10px;
-    display: inline;
-}
+  /************SLUT MENU BAR - JONAS**************/
 
 
-.inputBox, .dropdown{
-    height: 40px;
-    border-radius: 5px;
-    background-color: #EFEFEF;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-    color: #0D1B1E;
-    margin-bottom: 15px;
-    margin-right: 7px;
-    padding: 6px;
-}
-
-.medium{
-    width: 145px;
-}
-
-.large{
-    width: 170px;
-}
-
-.small{
-    width: 120px;
-}
-
-.full{
-    width: 300px;
-}
-/***********SLUT OPRET MEDLEMSKAB OG FAKTURA - DARLENE**************/
 
 /***********START TAK FOR DIN ANMODNING - DARLENE**************/
 
@@ -511,6 +506,48 @@ footer {
     font-family:'Exo 2', sans-serif;
     font-size:2em;
     transition-duration:0.5s;
->>>>>>> 9ce4b0b32363e5977bb6e94c5668833e721da0b8
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav.desk {
+    display: none;
+  }
+
+  nav.mob,
+  .hamburger-btn {
+    display: block;
+  }
+
+  .hamburger-btn {
+    position: relative;
+  }
+
+  .hamburger-btn .fa-bars,
+  .hamburger-btn .fa-times {
+    position: fixed;
+    left: 25px;
+    top: 15px;
+    font-size: 35px;
+    color: #fcfcfc;
+    cursor: pointer;
+  }
+
+  .mob ul{
+    margin-top: 60px;
+    background: #5FA8D3;
+    display: none;
+  }
+
+  .mob li {
+    padding: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+  }
+
+  .mob ul.active {
+    display: block;
   }
 }

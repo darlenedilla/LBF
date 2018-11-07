@@ -2,74 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 
-    <title>Atoms</title>
+    <title>Atoms:Grid</title>
 </head>
 <body>
-<<<<<<< HEAD
 
 
+<section id="bigGridWrapper">
 
 
+    <!-- start of mini-menu -->
+    <section id="mini-menu">
+        <ul class="mini-menu-wrapper">
+          <li class="mini-menu-item" id="miniMenuEvents" onclick="miniMenuClickEvents()">Events</li>
+          <li class="mini-menu-item" id="miniMenuNews" onclick="miniMenuClickNews()">News</li>
+        </ul>
+    </section>
+
+<!-- start of EVENTgrid -->
+<section id="gridWrapper">
+    <div class="grid-colum">
+              <div class="gridBox" onmouseover="gridOverlayed1()">
+              <div class="gridOverlay" id="gridOverlay1" onmouseout="gridNoOverlay1()">
+                <h2>Djur's Sommerland</h2>
+                <h3>29 Maj 2019</h3>
+                <span id="gridContent1" class="grid-content">
+                  Kom med til sjov og hygge i Djur's Sommerland med hele familien. Tag gerne badedragt med!
+                  <a href="#" class="gridButton">Læs mere &#8250;</a>
+                </span>
+              <div class="gridOverlayPuller" id="gridOverlayPuller1" onclick="gridNoOverlay1()"><div class="pullerArrow">&#8250;</div></div>
+                  <a href="#" class="gridCTA">Bliv Medlem</a>
+            </div>
+              <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
+            </div>
+
+            <div class="gridBox" onmouseover="gridOverlayed2()">
+            <div class="gridOverlay" id="gridOverlay2" onmouseout="gridNoOverlay2()">
+              <h2>Djur's Sommerland</h2>
+              <h3>29 Maj 2019</h3>
+              <span id="gridContent2" class="grid-content">
+                Kom med til sjov og hygge i Djur's Sommerland med hele familien. Tag gerne badedragt med!
+                <a href="#" class="gridButton">Læs mere &#8250;</a>
+              </span>
+            <div class="gridOverlayPuller" id="gridOverlayPuller2" onclick="gridNoOverlay2()"><div class="pullerArrow">&#8250;</div></div>
+          <a href="#" class="gridCTA">Bliv Medlem</a>
+        </div>
+            <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
+          </div>
+
+          <div class="gridBox" onmouseover="gridOverlayed3()">
+          <div class="gridOverlay" id="gridOverlay3" onmouseout="gridNoOverlay3()">
+            <h2>Djur's Sommerland</h2>
+            <h3>29 Maj 2019</h3>
+            <span id="gridContent3" class="grid-content">
+              Kom med til sjov og hygge i Djur's Sommerland med hele familien. Tag gerne badedragt med!
+              <a href="#" class="gridButton">Læs mere &#8250;</a>
+            </span>
+          <div class="gridOverlayPuller" id="gridOverlayPuller3" onclick="gridNoOverlay3()"><div class="pullerArrow">&#8250;</div></div>
+        <a href="#" class="gridCTA">Bliv Medlem</a>
+      </div>
+          <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
+        </div>
+
+  </div>
+
+</section>
+
+<!-- start of NEWSgrid -->
+<section id="gridWrapperNews">
+  <div class="grid-colum">
+            <div class="gridBox" onmouseover="gridOverlayedNews1()">
+            <div class="gridOverlay" id="gridOverlayNews1" onmouseout="gridNoOverlayNews1()">
+              <h2>UCL er cool</h2>
+              <h3>29 Maj 2019</h3>
+              <span id="gridContentNews1" class="grid-content">
+                UCL laver lige ny nu hjemmeside for LangeskovBorgerforening og de syntes meningsmålingerne er helt vildt fedt.
+                <a href="#" class="gridButton">Læs mere &#8250;</a>
+              </span>
+            <div class="gridOverlayPuller" id="gridOverlayPullerNews1" onclick="gridNoOverlayNews1()"><div class="pullerArrow">&#8250;</div></div>
+          <a href="#" class="gridCTA">Bliv Medlem</a>
+        </div>
+            <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
+          </div>
+
+          <div class="gridBox" onmouseover="gridOverlayedNews2()">
+          <div class="gridOverlay" id="gridOverlayNews2" onmouseout="gridNoOverlayNews2()">
+            <h2>UCL er cool</h2>
+            <h3>29 Maj 2019</h3>
+            <span id="gridContentNews2" class="grid-content">
+              UCL laver lige ny nu hjemmeside for LangeskovBorgerforening og de syntes meningsmålingerne er helt vildt fedt.
+              <a href="#" class="gridButton">Læs mere &#8250;</a>
+            </span>
+          <div class="gridOverlayPuller" id="gridOverlayPullerNews2" onclick="gridNoOverlayNews2()"><div class="pullerArrow">&#8250;</div></div>
+        <a href="#" class="gridCTA">Bliv Medlem</a>
+      </div>
+          <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
+        </div>
+
+        <div class="gridBox" onmouseover="gridOverlayedNews3()">
+        <div class="gridOverlay" id="gridOverlayNews3" onmouseout="gridNoOverlayNews3()">
+          <h2>UCL er cool</h2>
+          <h3>29 Maj 2019</h3>
+          <span id="gridContentNews3" class="grid-content">
+            UCL laver lige ny nu hjemmeside for LangeskovBorgerforening og de syntes meningsmålingerne er helt vildt fedt.
+            <a href="#" class="gridButton">Læs mere &#8250;</a>
+          </span>
+        <div class="gridOverlayPuller" id="gridOverlayPullerNews3" onclick="gridNoOverlayNews3()"><div class="pullerArrow">&#8250;</div></div>
+      <a href="#" class="gridCTA">Bliv Medlem</a>
+    </div>
+        <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
+      </div>
+
+</div>
+</section>
 
 
-    <form id="signUpForm">
-        <input class="inputBox" type="text" name="firstname" placeholder="Fornavn">
-        <input class="inputBox" type="text" name="lastname" placeholder="Efternavn">
-=======
-    <h1 id="membershipHeading">Opret medlemskab</h1>
-    <form id="signUpForm" action="faktura.html" method="GET">
-        <input class="inputBox medium" type="text" name="firstname" placeholder="Fornavn" required>
-        <input class="inputBox medium" type="text" name="lastname" placeholder="Efternavn" required>
-        <br>
-        <input class="inputBox large" type="email" name="email" placeholder="E-mail" required>
-        <input class="inputBox small" type="phone" name="phone" placeholder="Tlf. Nr." required>
->>>>>>> 9ce4b0b32363e5977bb6e94c5668833e721da0b8
-        <br>
-        <input class="inputBox large" type="text" name="address" placeholder="Adresse" required>
-            <select class="dropdown small" name="postnr" required>
-                <option>Post Nr.</option>
-                <option value="5550">5550 Langeskov</option>
-            </select>
-        <br>
-            <select class="dropdown medium" required>
-                <option selected>Voksne</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-            <select class="dropdown medium"required>
-                <option selected>Børn</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>'
-            </select>
-        <br>
-        <button type="submit" class="largeBtn submit">Gå til betaling <i class="fa fa-chevron-right"></i></button>
-      </form>
+<footer id="footer">
+<section class="footerText" id="footerTextBox">
+    <h4>Kontakt Langeskov Borgerforening</h4>
+    <span>Adresse: Et ellerandetvej 22</span>
+    <span>Postnummer: 5550 Langeskov</span>
+    <span>Tlf: 4217891</span>
+    <span>Email: lena@etellerandet.dk</span>
+</section>
+<a href="#" id="facebookIcon" onmouseover="followUsFooter()" onmouseout="followUsFooterOut()">f</a>
+<span id="followUs">Følg os på Facebook!</span>
 
-<!-- REMOVE BEFORE TURNING IN!! -->
-      <a href="grid.html"><button class="largeBtn">Nanna's Knap- Do not remove!<i class="arrowRight"></i></button></a>
+</section>
+
+</footer>
+
 </body>
-</html>

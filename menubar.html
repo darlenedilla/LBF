@@ -17,18 +17,30 @@
     <script>
         $(document).ready(function(){
           $(".hamburger-btn .fa-times").hide();
-
+          
         $(".hamburger-btn .fa-bars").click(function(){
+          $(".mob .searchList").removeClass("active");
           $(this).hide();
           $(".hamburger-btn .fa-times").show();
-          $(".mob ul").addClass("active");
+          $(".mob .menuList").addClass("active");
         });
 
         $(".hamburger-btn .fa-times").click(function(){
           $(this).hide();
           $(".hamburger-btn .fa-bars").show();
-          $(".mob ul").removeClass("active");
+          $(".mob .menuList").removeClass("active");
         });
+
+        $(".fa-search").click(function(){
+          if($(".searchList").hasClass("active")){
+            $(".mob .searchList").removeClass("active");
+          }
+          else{
+            $(".mob .searchList").addClass("active");
+          }
+          $(".mob .menuList").removeClass("active");
+        });
+
         });
       </script>
     </head>
@@ -43,7 +55,6 @@
           <li><a href="#">Nyheder</a></li>
           <li><a href="#">Om Os</a></li>
           <li><a href="#">Medlemsfordele</a></li>
-          <input class="searchInput" type="text" placeholder="Search..">
         </ul>
 
 
@@ -59,12 +70,12 @@
         <div class="search-btn">
             <i class="fa fa-search" aria-hidden="true"></i>
         </div>
-        <ul>
-            <input class="searchInput active" type="text" placeholder="Search..">
+        <ul class="searchList ">
+            <li class="active"><input id="searchInput" class="inputBox full" type="text" placeholder="Search.."></li>
         </ul>
 
 
-        <ul>
+        <ul class="menuList">
             <li class="active"><a href="#">Events</a></li>
             <li><a href="#">Nyheder</a></li>
             <li><a href="#">Om Os</a></li>

@@ -134,8 +134,14 @@ body {
   cursor: pointer;
 }
 
-nav.desk ul searchInput {
-  width: 160px;
+#searchInput{
+  background-color: #fcfcfc;
+  width: 90vw;
+  position: absolute;
+  top: 70px;
+}
+
+nav.desk ul #searchInput {
   float: right;
   text-align: center;
   line-height: 60px;
@@ -143,6 +149,8 @@ nav.desk ul searchInput {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+
 
 
 
@@ -184,6 +192,7 @@ nav.mob ul li:hover{
 nav.desk ul li.active,
 nav.mob ul li.active{
   background: #efefef;
+  max-height: 70px;
 }
 
 nav ul li a {

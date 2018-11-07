@@ -39,7 +39,7 @@ body {
     margin-left: -150px;
 }
 
-.submitBtn, .linkBtn{
+.submit, .link{
     height: 40px;
     width: 300px;
 }
@@ -120,7 +120,7 @@ body {
     margin-top: 55px;
 }
 
-.linkBtn{
+.link{
     position: relative;
     margin-top: 10px;
 }

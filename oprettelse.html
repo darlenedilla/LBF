@@ -15,45 +15,44 @@
     <form id="signUpForm" action="faktura.html" method="GET">
         <input class="inputBox medium" type="text" name="firstname" placeholder="Fornavn" required>
         <input class="inputBox medium" type="text" name="lastname" placeholder="Efternavn" required>
-        <br>
+    
         <input class="inputBox large" type="email" name="email" placeholder="E-mail" required>
         <input class="inputBox small" type="phone" name="phone" placeholder="Tlf. Nr." required>
-        <br>
+        
         <input class="inputBox large" type="text" name="address" placeholder="Adresse" required>
             <select class="dropdown small" name="postnr" required>
                 <option>Post Nr.</option>
                 <option value="5550">5550 Langeskov</option>
             </select>
-        <br>
-            <select class="dropdown medium" required>
-                <option selected>Voksne</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
+            <label for="dropdown" id="dropdownHeading">I hustanden er der:</label>
+            <br>
+            <select name="Voksne" class="dropdown medium" required>
+                <option selected value="0">0 voksne</option>
+                <option value="1">1 voksen</option>
+                <option value="2">2 voksne</option>
+                <option value="3">3 voksne</option>
+                <option value="4">4 voksne</option>
+                <option value="5">5 voksne</option>
+                <option value="6">6 voksne</option>
+                <option value="7">7 voksne</option>
+                <option value="8">8 voksne</option>
+                <option value="9">9 voksne</option>
+                <option value="10">10 voksne</option>
             </select>
-            <select class="dropdown medium"required>
-                <option selected>Børn</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>'
+            <select name="Børn" class="dropdown medium"required>
+                <option selected value="0">0 børn</option>
+                <option value="1">1 barn</option>
+                <option value="2">2 børn</option>
+                <option value="3">3 børn</option>
+                <option value="4">4 børn</option>
+                <option value="5">5 børn</option>
+                <option value="6">6 børn</option>
+                <option value="7">7 børn</option>
+                <option value="8">8 børn</option>
+                <option value="9">9 børn</option>
+                <option value="10">10 børn</option>'
             </select>
-        <br>
+        
         <button type="submit" class="largeBtn submit">Gå til betaling <i class="fa fa-chevron-right"></i></button>
       </form>
     

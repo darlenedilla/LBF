@@ -112,8 +112,8 @@ var getParams = function (url) {
           document.getElementById('miniMenuEvents').style.color="black";
           document.getElementById('miniMenuNews').style.color="white";
 
-          document.getElementById('gridWrapper').style.left="5%";
-          document.getElementById('gridWrapperNews').style.right="+150%";
+          document.getElementById('gridWrapperEvents').style.left="0%";
+          document.getElementById('gridWrapperNews').style.left="+150%";
         }
 
         function miniMenuClickNews(){
@@ -123,8 +123,8 @@ var getParams = function (url) {
           document.getElementById('miniMenuEvents').style.color="white";
           document.getElementById('miniMenuNews').style.color="black";
 
-          document.getElementById('gridWrapper').style.left="-150%";
-          document.getElementById('gridWrapperNews').style.right="5%";
+          document.getElementById('gridWrapperEvents').style.left="+150%";
+          document.getElementById('gridWrapperNews').style.left="0%";
         }
 // HERE ENDS MINI-MENU SCRIPT //
 
@@ -175,3 +175,21 @@ var getParams = function (url) {
   })
 
   });
+
+
+  // CINDY BETINGELSER SCRIPT //
+
+  function readMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+    var btnText = document.getElementById("betingelserBtn");
+
+    if (dots.style.display ==="none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Læs mere <i class=\"fa fa-chevron-down\"></i>";
+    moreText.style.display = "none";}
+  else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Læs mindre <i class=\"fa fa-chevron-up\"></i>";
+    moreText.style.display = "inline";
+    }}

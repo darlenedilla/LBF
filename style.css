@@ -32,11 +32,12 @@ body {
 
 #signUpForm, #paymentForm{
     width: 310px;
-    position: absolute;
-    top: 70%;
+    position: relative;
+    top:170px;
     left: 50%;
     margin-top: -150px;
     margin-left: -150px;
+    transition:0.5s;
 }
 
 .submit, .link{
@@ -274,7 +275,7 @@ nav img {
   top:0;
   right:0;
   left:0;
-  max-width:100%;
+  width:100%;
   height:60px;
   z-index:3;
   font-family:'Exo 2', sans-serif;
@@ -282,9 +283,9 @@ nav img {
   text-align:center;
 }
 .mini-menu-wrapper {
-  position:sticky;
-  top:0;
-  width:100%;
+  /*position:sticky;
+  top:0; */
+  /*width:100%; */
   height:100%;
   list-style:none;
   display:block;
@@ -318,10 +319,9 @@ nav img {
 /* grid css - NANNA */
 #bigGridWrapper {
   width:100%;
-  min-height:100%;
 }
 
-#gridWrapper {
+#gridWrapperEvents {
   box-sizing:inherit;
   position:absolute;
   width:90%;
@@ -336,7 +336,7 @@ nav img {
   box-sizing:inherit;
   position:absolute;
   width:90%;
-  right:+150%;
+  /* right:+150%; */
   top:10%;
   text-align:center;
   transition-duration:0.5s
@@ -502,32 +502,6 @@ footer {
   display:none;
 }
 
-
-/* @media's go down here! Always keep this at the bottom! */
-
-@media screen and (min-width: 770px) {
-  #mini-menu {
-    display:none;
-  }
-  .gridCTA {
-    margin-top:75%;
-  }
-  #facebookIcon {
-    right:0;
-  }
-  #followUs {
-    opacity:0;
-    position:absolute;
-    display:block;
-    right:10%;
-    top:40%;
-    font-family:'Exo 2', sans-serif;
-    font-size:2em;
-    transition-duration:0.5s;
-  }
-}
-
-
 /* HERE STARTS STYLEBURGERANIMATION CSS */
 
 .toggle {
@@ -581,7 +555,41 @@ footer {
   transition-delay: .2s;
 }
 
+/* CINDY BETINGELSER CSS */
 
+#betingelserBtn {
+color: #0d1b1e;
+width: 130px;
+font-family: 'Lato', sans-serif;
+font-weight: bold;
+font-style: normal;
+text-align: center;
+margin-top: 10px;
+border:none;
+background-color:#efefef;
+text-decoration:underline;
+}
+
+#betingelsesbox {
+  height:100%;
+  background-color:#efefef;
+  text-align:left;
+  vertical-align:middle;
+  padding:20px 47px;
+  font-family:'Lato', sans-serif;
+  line-height:2em;
+  margin-top: 20px;
+}
+
+#more {
+  display:none;
+}
+
+
+
+
+
+/* HER ER ALT @MEDIA */
 @media screen and (max-width: 700px) {
   nav.desk {
     display: none;
@@ -621,5 +629,27 @@ footer {
 
   .mob ul.active {
     display: block;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  #mini-menu {
+    display:none;
+  }
+  .gridCTA {
+    margin-top:75%;
+  }
+  #facebookIcon {
+    right:0;
+  }
+  #followUs {
+    opacity:0;
+    position:absolute;
+    display:block;
+    right:10%;
+    top:40%;
+    font-family:'Exo 2', sans-serif;
+    font-size:2em;
+    transition-duration:0.5s;
   }
 }

@@ -6,39 +6,20 @@
 	@import url("../../../../Desktop/betingelser.css");
 </style>
 </head>
-	
-<body>
-	<div style="background-color:#EFEFEF;
-	 text-align:left;
-	 vertical-align: middle;
-	 padding:20px 47px;">
-	<div class="boxed"> Jeg har læst og accepterer følgende betingelser ved denne indmeldelse.
 
+<body>
+	<div id="betingelsesbox">
+
+	<div class="boxed"> Jeg har læst og accepterer følgende betingelser ved denne indmeldelse.
 <h2>Bettingelser</h2>
 	<p>1: At Langeskov Borgerforening må registrere mit navn, adresse, tlf.nr. og e-mail i et medlemskartotek, Langeskov Borgerforening
 	<span id="dots">...</span>
 	<span id="more"> registrerer ingen personfølsomme oplysninger i relation til mit medlemskab. Formålet med denne registrering er udelukkende til brug 	for kommunikation mellem foreningen og medlemmet. </span>
 	   2: At Langeskov Borgerforening må udsende forenings relaterede mail’s til medlemmet.
 	   3: At Langeskov Borgerforening, ved min udmeldelse, forpligter sig  til at sletter alle oplysninger om mig.</p>
-	<button onclick="myFunction()" id="myBtn">LÆS MERE</button>
-
-<script>
-	function myFunction() {
-	var dots = document.getElementById("dots");
-	var moreText = document.getElementById("more");
-  	var btnText = document.getElementById("myBtn");
-
-  	if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "LÆS MERE"; 
-    moreText.style.display = "none";}
-	else {
-    dots.style.display = "none";
-    btnText.innerHTML = "LÆS MINDRE"; 
-    moreText.style.display = "inline";}}
-</script>
-	</div>	
+	<button onclick="readMore()" id="betingelserBtn">LÆS MERE</button>
 	</div>
-	
+	</div>
+
 </body>
 </html>

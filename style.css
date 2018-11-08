@@ -113,6 +113,16 @@ body {
 
 
 /************START MENU BAR - JONAS**************/
+.logo{
+  position: fixed;
+  height: 50px;
+  padding-top: 10px;
+  z-index: 50;
+}
+
+.wrapper{
+  text-align: center;
+}
 
 .fa .fa-search, .fa .fa-bars, .fa .fa-bars {
   border: solid #FCFCFC;
@@ -149,11 +159,6 @@ nav.desk ul #searchInput {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
-
-
-
-
 
 .container nav.desk,
 .container nav.mob{
@@ -212,7 +217,14 @@ nav ul li:hover a {
   display: none;
 }
 
-
+/*
+nav img {
+  position: fixed;
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  margin-top: 5px;
+}
   /************SLUT MENU BAR - JONAS**************/
 
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,7 +17,7 @@
     <script>
         $(document).ready(function(){
           $(".hamburger-btn .fa-times").hide();
-          
+
         $(".hamburger-btn .fa-bars").click(function(){
           $(".mob .searchList").removeClass("active");
           $(this).hide();
@@ -43,9 +43,15 @@
 
         });
       </script>
-    </head>
-    <body>
-
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div>
+          <img class="logo" src="img/logo2.png">
+        </div>
+      </div>
+    </header>
 
 
     <div class="container">
@@ -56,9 +62,8 @@
           <li><a href="#">Om Os</a></li>
           <li><a href="#">Medlemsfordele</a></li>
         </ul>
-
-
       </nav>
+
 
       <nav class="mob">
         <div class="hamburger-btn">
@@ -83,11 +88,8 @@
         </ul>
       </nav>
 
-      <div class="header">
-      </div>
-
     </div>
 
 
-    </body>
-    </html>
+  </body>
+</html>

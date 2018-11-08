@@ -113,18 +113,8 @@ body {
 
 
 /************START MENU BAR - JONAS**************/
-.logo{
-  position: fixed;
-  height: 50px;
-  padding-top: 10px;
-  z-index: 50;
-}
 
-.wrapper{
-  text-align: center;
-}
-
-.fa .fa-search, .fa .fa-bars, .fa .fa-bars {
+.fa .fa-search, .hamburgermenu {
   border: solid #FCFCFC;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -217,6 +207,19 @@ nav ul li:hover a {
   display: none;
 }
 
+
+
+
+.bar1, .bar2, .bar3 {
+
+    width: 35px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
 /*
 nav img {
   position: fixed;

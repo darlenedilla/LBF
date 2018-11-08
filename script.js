@@ -138,3 +138,40 @@ var getParams = function (url) {
     function followUsFooterOut(){
       document.getElementById('followUs').style.opacity="0";
     }
+
+  // toggle menu SCRIPT //
+
+  $(document).ready(function(){
+    $(".hamburger-btn .fa-times").hide();
+
+    $(".toggle").click(function(){
+      if($(".menuList").hasClass("active")){
+        $(".menuList").removeClass("active");
+      }
+      else{
+        $(".menuList").addClass("active");
+      }
+      $(".searchList").removeClass("active");
+    })
+
+  $(".fa-search").click(function(){
+    if($(".searchList").hasClass("active")){
+      $(".searchList").removeClass("active");
+    }
+    else{
+      $(".searchList").addClass("active");
+    }
+    $(".menuList").removeClass("active");
+  });
+
+  // BURGER MENU ANIMATION //
+
+  $('.toggle').click(function(){
+    $('.toggle').toggleClass('activetoggle')
+  });
+
+  $('.fa-search').click(function(){
+    $('.toggle').removeClass('activetoggle')
+  })
+
+  });

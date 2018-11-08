@@ -37,7 +37,7 @@ body {
     left: 50%;
     margin-top: -150px;
     margin-left: -150px;
-    transition:0.5s;
+    margin-bottom:50px;
 }
 
 .submit, .link{
@@ -106,7 +106,13 @@ body {
   display: inline;
 }
 
+.checkBox {
+  margin-bottom:10px;
+}
 
+.reminder {
+
+}
 /***********SLUT OPRET MEDLEMSKAB OG FAKTURA - DARLENE**************/
 
 
@@ -570,7 +576,7 @@ background-color:#efefef;
 text-decoration:underline;
 }
 
-#betingelsesbox {
+#betingelsesbox, .reminder {
   height:100%;
   background-color:#efefef;
   text-align:left;
@@ -585,7 +591,11 @@ text-decoration:underline;
   display:none;
 }
 
-
+.reminder {
+  position:relative;
+  border-radius:5px;
+  margin-bottom:15px;
+}
 
 
 

@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
 
+    $(function(){
+      $('header').load('header.html');
+      $('footer').load('footer.html');
+    });
+
+</script>
     <title>Atoms</title>
 </head>
 <body>
+  <header></header>
+
     <h1 id="membershipHeading">Opret medlemskab</h1>
 <!-- BETINGELSESBOX -->
 
@@ -66,11 +76,12 @@
             <option value="7">7 børn</option>
             <option value="8">8 børn</option>
             <option value="9">9 børn</option>
-            <option value="10">10 børn</option>'
+            <option value="10">10 børn</option>
         </select>
-
+          <div class="checkBox"><input type="checkbox"><span> Tilmeld nyhedsbrev.</span></div>
+            <div class="checkBox"><input type="checkbox" required><span> Jeg har læst og accepterer betingelserne for medlemskab og betaling.</span></div>
         <button type="submit" class="largeBtn submit">Gå til betaling <i class="fa fa-chevron-right"></i></button>
       </form>
-
+<footer></footer>
 </body>
 </html>

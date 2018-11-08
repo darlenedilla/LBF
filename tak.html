@@ -7,9 +7,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script type="text/javascript">
+
+        $(function(){
+          $('header').load('header.html');
+          $('footer').load('footer.html');
+        });
+
+    </script>
     <title>Atoms tak</title>
 </head>
 <body onload="thankYou()">
+
+  <header></header>
     <h1 id="thankYouHeading"></h1>
 
     <div id="lastPageWrapper">
@@ -24,10 +34,12 @@
             som du vil kunne tilmelde dig når dit medlemskab<br> er oprettet.
         </p>
         <div id="btnWrapper">
-            <button class="largeBtn link" href="#">Gå til events <i class="fa fa-chevron-right"></i></button>
-            <button class="largeBtn link" href="#">Gå til forsiden <i class="fa fa-chevron-right"></i></button>
+            <button class="largeBtn link" href="#">Gå til events</button>
+            <button class="largeBtn link" href="#">Gå til forsiden</button>
         </div>
     </div>
+
+    <footer></footer>
 
 </body>
 </html>

@@ -7,10 +7,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(function(){
+          $('header').load('header.html');
+          $('footer').load('footer.html');
+        });
+
+    </script>
     <title>Atoms</title>
 </head>
 <body onload="fillForm()">
+
+  <header>
+
+  </header>
     <h1 id="paymentHeading">Faktureringsoplysninger</h1>
+
+        <div id="betingelsesbox">
+
+          <div class="boxed">
+                <h3>Betingelser</h3>
+                  <p>1: At Langeskov Borgerforening må registrere mit navn, adresse, tlf.nr. og e-mail i et medlemskartotek, Langeskov Borgerforening</p>
+                    <span id="dots">...</span>
+                    <span id="more"> <span><p>registrerer ingen personfølsomme oplysninger i relation til mit medlemskab. Formålet med denne registrering er
+                      udelukkende til brug 	for kommunikation mellem foreningen og medlemmet.</p>
+                      <p>2: At Langeskov Borgerforening må udsende forenings relaterede mail’s til medlemmet.</p>
+                      <p>3: At Langeskov Borgerforening, ved min udmeldelse, forpligter sig  til at sletter alle oplysninger om mig.</p></span></span>
+                    <button onclick="readMore()" id="betingelserBtn">Læs mere<i class="fa fa-chevron-down"></i></button>
+          </div>
+        </div>
+
     <form id="paymentForm" action="tak.html">
         <input class="inputBox medium" type="text" name="firstname" id="firstname" required>
         <input class="inputBox medium" type="text" name="lastname" id="lastname" required>
@@ -21,7 +50,10 @@
         <input class="inputBox large" type="email" name="email" id="email" required>
         <input class="inputBox small" type="phone" name="phone" id="phone" required>
         <input class="inputBox full" type="textarea" name="comments" placeholder="Bemærkninger...">
-        <button type="submit" class="largeBtn submit">Send anmodning<i class="fa fa-chevron-right"></i></button>
-    </form>
+        <div class="reminder">
+          <span><p>Betaling foregår på MobilePay 45021 eller bankoverførsel til kontonr: 2014-0722 465 857.</p>
+          <p>Vær opmærksom på at din anmodning om medlemskab først bliver godkendt når din betaling er modtaget.</p></span></div>
+        <button type="submit" class="largeBtn submit">Send anmodning<i class="fa fa-chevron-right"></i></button></form>
+<footer></footer>
 </body>
 </html>

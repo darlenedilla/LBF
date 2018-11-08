@@ -12,6 +12,7 @@ body{
   height: 80px;
   width: 80px;
   background: #5FA8D3;
+  cursor: pointer;
 }
 
 .toggle span{

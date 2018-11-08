@@ -31,8 +31,8 @@ var getParams = function (url) {
 
     //Indsætter navn fra formular i "Tak for anmodning"-page
     function thankYou(){
-        thankYouName = "Tak for din støtte " + object.firstname + " " + object.lastname + ".";
-        thankYouElement = document.getElementById("thankYouName");
+        thankYouName = "Tak, " + object.firstname + "!";
+        thankYouElement = document.getElementById("thankYouHeading");
         thankYouElement.innerHTML = thankYouName;
     }
 

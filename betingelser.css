@@ -1,0 +1,17 @@
+div {
+font-family: 'Lato', sans-serif;
+line-height: 2em;}
+
+#myBtn {
+text-transform: uppercase;
+background: #5fa8d3;
+color: #fff;
+padding: 8px;
+width: 130px;
+font-family: 'Lato', sans-serif;
+font-weight: bold;
+font-style: normal;
+text-align: center;
+margin-top: 1rem;
+border: 1px solid black;
+border-radius: 10px;}

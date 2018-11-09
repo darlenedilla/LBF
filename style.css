@@ -20,7 +20,7 @@ body {
     font-weight: 400;
   }
 
-/***********START OPRET MEDLEMSKAB OG FAKTURA - DARLENE**************/
+/***********START OPRET MEDLEMSKAB OG FAKTURA SAMT BETALING - DARLENE**************/
 #membershipHeading, #paymentHeading, #thankYouHeading{
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
@@ -110,10 +110,52 @@ body {
   margin-bottom:10px;
 }
 
-.reminder {
-
+.paymentWrapper{
+  width: 100%;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  display: block;
+  width: 300px;
+  margin: auto;
 }
-/***********SLUT OPRET MEDLEMSKAB OG FAKTURA - DARLENE**************/
+
+#paymentIntro{
+  height: 100px;
+  width: 300px;
+  display: block;
+  margin-top: 15px;
+}
+
+.paymentNo{
+  width: 100%;
+  height: 70px;
+  color: #FFC658;
+  font-size: 2em;
+  font-weight: 700;
+  background-color: #efefef;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+#paymentBox{
+  margin-bottom: 20px;
+}
+
+.paymentDesc{
+  margin: 20px 0px 10px 0px;
+}
+
+.hiddenInput{
+  visibility: hidden;
+  display: none;
+}
+
+
+
+/***********SLUT OPRET MEDLEMSKAB OG FAKTURA SAMT BETALING - DARLENE**************/
 
 
 
@@ -235,6 +277,12 @@ nav img {
 
 /***********START TAK FOR DIN ANMODNING - DARLENE**************/
 
+#checkIcon{
+  margin: auto;
+  display: block;
+  padding-top: 30px;
+}
+
 #thankYouName, #thankYouText1, #thankYouText2{
     width: 300px;
     height: 50px;
@@ -242,17 +290,17 @@ nav img {
     font-weight: 400;
     font-size: 1.2em;
     color: #0D1B1E;
-    padding-top: 25px;
+    padding-top: 10px;
     margin: auto;
     line-height: 1.2;
     letter-spacing: 0.5px;
 }
 
 #thankYouText1{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 #thankYouText2{
-    margin-top: 75px;
+    margin-top: 90px;
 }
 
 .link{
@@ -268,7 +316,7 @@ nav img {
 
 #btnWrapper{
     position: absolute;
-    bottom: 110px;
+    bottom: 90px;
 }
 
 /***********SLUT TAK FOR DIN ANMODNING - DARLENE**************/

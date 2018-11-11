@@ -16,25 +16,54 @@
           $('footer').load('footer.html');
         });
 
+
     </script>
     <title>Atoms:Grid</title>
 </head>
 <body>
-<header id="header"></header>
-
-<section id="bigGridWrapper">
-
-
-    <!-- start of mini-menu -->
+  <header></header>
+    <!-- start of mini-menu-->
     <section id="mini-menu">
         <ul class="mini-menu-wrapper">
-          <li class="mini-menu-item" id="miniMenuEvents" onclick="miniMenuClickEvents()">Events</li>
           <li class="mini-menu-item" id="miniMenuNews" onclick="miniMenuClickNews()">News</li>
+          <li class="mini-menu-item" id="miniMenuEvents" onclick="miniMenuClickEvents()">Events</li>
         </ul>
     </section>
 
+  <section id="bigGridWrapper">
+<!-- start of NEWSgrid -->
+<section id="gridWrapperNews">
+  <div class="grid-colum">
+            <div class="gridBox" onmouseover="gridOverlayedNews1()">
+            <div class="gridOverlay" id="gridOverlayNews1" onmouseout="gridNoOverlayNews1()">
+              <h2>UCL er cool</h2>
+              <h3>29 Maj 2019</h3>
+              <span id="gridContentNews1" class="grid-content">
+                UCL laver lige ny nu hjemmeside for LangeskovBorgerforening og de syntes meningsmålingerne er helt vildt fedt.
+                <a href="#" class="gridButton">Se på Facebook &#8250;</a>
+              </span>
+            <div class="gridOverlayPuller" id="gridOverlayPullerNews1" onclick="gridNoOverlayNews1()"><div class="pullerArrow">&#8250;</div></div>
+        </div>
+            <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
+          </div>
+
+          <div class="gridBox" onmouseover="gridOverlayedNews1()">
+          <div class="gridOverlay" id="gridOverlayNews1" onmouseout="gridNoOverlayNews1()">
+            <h2>UCL er cool</h2>
+            <h3>29 Maj 2019</h3>
+            <span id="gridContentNews1" class="grid-content">
+              UCL laver lige ny nu hjemmeside for LangeskovBorgerforening og de syntes meningsmålingerne er helt vildt fedt.
+              <a href="#" class="gridButton">Læs mere &#8250;</a>
+            </span>
+          <div class="gridOverlayPuller" id="gridOverlayPullerNews1" onclick="gridNoOverlayNews1()"><div class="pullerArrow">&#8250;</div></div>
+      </div>
+          <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
+        </div>
+</div>
+</section>
+
 <!-- start of EVENTgrid -->
-<section id="gridWrapper">
+<section id="gridWrapperEvents">
     <div class="grid-colum">
               <div class="gridBox" onmouseover="gridOverlayed1()">
               <div class="gridOverlay" id="gridOverlay1" onmouseout="gridNoOverlay1()">
@@ -45,36 +74,26 @@
                   <a href="#" class="gridButton">Læs mere &#8250;</a>
                 </span>
               <div class="gridOverlayPuller" id="gridOverlayPuller1" onclick="gridNoOverlay1()"><div class="pullerArrow">&#8250;</div></div>
-                  <a href="#" class="gridCTA">Bliv Medlem</a>
+                  <a href="#" class="gridCTA">Tilmeld</a>
             </div>
               <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
             </div>
 
-  </div>
-
-</section>
-
-<!-- start of NEWSgrid -->
-<section id="gridWrapperNews">
-  <div class="grid-colum">
-            <div class="gridBox" onmouseover="gridOverlayedNews1()">
-            <div class="gridOverlay" id="gridOverlayNews1" onmouseout="gridNoOverlayNews1()">
-              <h2>UCL er cool</h2>
+            <div class="gridBox" onmouseover="gridOverlayed1()">
+            <div class="gridOverlay" id="gridOverlay1" onmouseout="gridNoOverlay1()">
+              <h2>Djur's Sommerland</h2>
               <h3>29 Maj 2019</h3>
-              <span id="gridContentNews1" class="grid-content">
-                UCL laver lige ny nu hjemmeside for LangeskovBorgerforening og de syntes meningsmålingerne er helt vildt fedt.
+              <span id="gridContent1" class="grid-content">
+                Kom med til sjov og hygge i Djur's Sommerland med hele familien. Tag gerne badedragt med!
                 <a href="#" class="gridButton">Læs mere &#8250;</a>
               </span>
-            <div class="gridOverlayPuller" id="gridOverlayPullerNews1" onclick="gridNoOverlayNews1()"><div class="pullerArrow">&#8250;</div></div>
-          <a href="#" class="gridCTA">Bliv Medlem</a>
-        </div>
+            <div class="gridOverlayPuller" id="gridOverlayPuller1" onclick="gridNoOverlay1()"><div class="pullerArrow">&#8250;</div></div>
+                <a href="#" class="gridCTA">Tilmeld</a>
+          </div>
             <img src="img/2dimg.jpg" alt="grid img" class="grid-img">
           </div>
-
-
-</div>
-</section></section>
-
+  </div>
+</section>
+</section>
 <footer></footer>
-
 </body>

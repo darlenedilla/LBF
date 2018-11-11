@@ -42,89 +42,54 @@ var getParams = function (url) {
 
 
         function gridOverlayed1(){
-          document.getElementById('gridOverlay1').style.height="100%";
+          document.getElementById('gridOverlay1').style.height="350px";
+          document.getElementById('gridOverlay1').style.borderBottomLeftRadius="5px";
+          document.getElementById('gridOverlay1').style.borderBottomRightRadius="5px";
           document.getElementById('gridContent1').style.opacity="1";
         }
         function gridNoOverlay1(){
-          document.getElementById('gridOverlay1').style.height="20%";
+          document.getElementById('gridOverlay1').style.height="65px";
           document.getElementById('gridContent1').style.opacity="0";
-        }
-
-
-        function gridOverlayed2(){
-          document.getElementById('gridOverlay2').style.height="100%";
-          document.getElementById('gridContent2').style.opacity="1";
-        }
-        function gridNoOverlay2(){
-          document.getElementById('gridOverlay2').style.height="20%";
-          document.getElementById('gridContent2').style.opacity="0";
-        }
-
-
-        function gridOverlayed3(){
-          document.getElementById('gridOverlay3').style.height="100%";
-          document.getElementById('gridContent3').style.opacity="1";
-        }
-        function gridNoOverlay3(){
-          document.getElementById('gridOverlay3').style.height="20%";
-          document.getElementById('gridContent3').style.opacity="0";
+          document.getElementById('gridOverlay1').style.borderBottomLeftRadius="0px";
+          document.getElementById('gridOverlay1').style.borderBottomRightRadius="0px";
         }
 
         //News grid jscript
 
         function gridOverlayedNews1(){
-          document.getElementById('gridOverlayNews1').style.height="100%";
+          document.getElementById('gridOverlayNews1').style.height="350px";
           document.getElementById('gridContentNews1').style.opacity="1";
+          document.getElementById('gridOverlayNews1').style.borderBottomLeftRadius="0px";
+          document.getElementById('gridOverlayNews1').style.borderBottomRightRadius="0px";
         }
         function gridNoOverlayNews1(){
-          document.getElementById('gridOverlayNews1').style.height="20%";
+          document.getElementById('gridOverlayNews1').style.height="65px";
           document.getElementById('gridContentNews1').style.opacity="0";
+          document.getElementById('gridOverlayNews1').style.borderBottomLeftRadius="0px";
+          document.getElementById('gridOverlayNews1').style.borderBottomRightRadius="0px";
         }
-
-
-        function gridOverlayedNews2(){
-          document.getElementById('gridOverlayNews2').style.height="100%";
-          document.getElementById('gridContentNews2').style.opacity="1";
-        }
-        function gridNoOverlayNews2(){
-          document.getElementById('gridOverlayNews2').style.height="20%";
-          document.getElementById('gridContentNews2').style.opacity="0";
-        }
-
-
-        function gridOverlayedNews3(){
-          document.getElementById('gridOverlayNews3').style.height="100%";
-          document.getElementById('gridContentNews3').style.opacity="1";
-        }
-        function gridNoOverlayNews3(){
-          document.getElementById('gridOverlayNews3').style.height="20%";
-          document.getElementById('gridContentNews3').style.opacity="0";
-        }
-
 // HERE ENDS GRID JSCRIPT
 
 // HERE STARTS MINI-MENU JSCRIPT
 
-        function miniMenuClickEvents() {
-          document.getElementById('miniMenuEvents').style.backgroundColor="#fcfcfc";
-          document.getElementById('miniMenuNews').style.backgroundColor="#5fa8d3";
+        function miniMenuClickNews() {
+          document.getElementById('miniMenuNews').style.backgroundColor="#fcfcfc";
+          document.getElementById('miniMenuEvents').style.backgroundColor="#5fa8d3";
 
-          document.getElementById('miniMenuEvents').style.color="black";
-          document.getElementById('miniMenuNews').style.color="white";
+          document.getElementById('miniMenuNews').style.color="black";
+          document.getElementById('miniMenuEvents').style.color="white";
 
-          document.getElementById('gridWrapperEvents').style.left="0%";
-          document.getElementById('gridWrapperNews').style.left="+150%";
+          document.getElementById('bigGridWrapper').style.left="5%";
         }
 
-        function miniMenuClickNews(){
-          document.getElementById('miniMenuEvents').style.backgroundColor="#5fa8d3";
-          document.getElementById('miniMenuNews').style.backgroundColor="#fcfcfc";
+        function miniMenuClickEvents(){
+          document.getElementById('miniMenuNews').style.backgroundColor="#5fa8d3";
+          document.getElementById('miniMenuEvents').style.backgroundColor="#fcfcfc";
 
-          document.getElementById('miniMenuEvents').style.color="white";
-          document.getElementById('miniMenuNews').style.color="black";
+          document.getElementById('miniMenuNews').style.color="white";
+          document.getElementById('miniMenuEvents').style.color="black";
 
-          document.getElementById('gridWrapperEvents').style.left="+150%";
-          document.getElementById('gridWrapperNews').style.left="0%";
+          document.getElementById('bigGridWrapper').style.left="-105%";
         }
 // HERE ENDS MINI-MENU SCRIPT //
 

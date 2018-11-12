@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>404 Page</title>
+    <script type="text/javascript">
+
+    $(function(){
+      $('footer').load('footer.html');
+    });
+
+    </script>
+
+  </head>
+  <body>
+    <header>
+      <section id="headerWrapper">
+        <div class="wrapper">
+            <div>
+              <a href="index.html">
+              <img class="logo" src="img/logo2.png"></a>
+            </div>
+          </div>
+
+          <div class="container">
+            <nav class="desk">
+              <ul>
+                <li class="active"><a href="#">Events</a></li>
+                <li><a href="index.html">Nyheder</a></li>
+                <li><a href="404.html">Om Os</a></li>
+                <li><a href="404.html">Medlemsfordele</a></li>
+              </ul>
+            </nav>
+
+
+            <nav class="mob">
+              <div class="hamburger-btn">
+                <div class="toggle">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+
+
+              <div class="search-btn">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+              </div>
+              <ul class="searchList ">
+                  <li class="active"><input id="searchInput" class="inputBox full" type="text" placeholder="Search.."></li>
+              </ul>
+
+
+              <ul class="menuList" >
+                  <li class="active"><a href="#">Events</a></li>
+                  <li><a href="index.html">Nyheder</a></li>
+                  <li><a href="404.html">Om Os</a></li>
+                  <li><a href="404.html">Medlemsfordele</a></li>
+              </ul>
+            </nav>
+          </div>
+      </section>
+    </header>
+
+<footer></footer>
+
+  </body>
+</html>

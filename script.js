@@ -117,6 +117,7 @@ var getParams = function (url) {
         $(".menuList").addClass("active");
       }
       $(".searchList").removeClass("active");
+      console.log("Hello world!Burger")
     })
 
   $(".fa-search").click(function(){
@@ -127,6 +128,7 @@ var getParams = function (url) {
       $(".searchList").addClass("active");
     }
     $(".menuList").removeClass("active");
+    console.log("Hello world!")
   });
 
   // BURGER MENU ANIMATION //
@@ -151,10 +153,12 @@ var getParams = function (url) {
 
     if (dots.style.display ==="none") {
     dots.style.display = "inline";
+    document.getElementById("betingelsesbox").style.height="230px"
     btnText.innerHTML = "Læs mere <i class=\"fa fa-chevron-down\"></i>";
     moreText.style.display = "none";}
   else {
     dots.style.display = "none";
+    document.getElementById("betingelsesbox").style.height="100%"
     btnText.innerHTML = "Læs mindre <i class=\"fa fa-chevron-up\"></i>";
     moreText.style.display = "inline";
     }}

@@ -12,7 +12,6 @@
     <script type="text/javascript">
 
         $(function(){
-          $('header').load('header.html');
           $('footer').load('footer.html');
         });
 
@@ -21,7 +20,56 @@
 </head>
 <body onload="fillForm()">
 
-  <header></header>
+<header>
+  <section id="headerWrapper">
+    <div class="wrapper">
+        <div>
+          <a href="index.html">
+          <img class="logo" src="img/logo2.png"></a>
+        </div>
+      </div>
+
+      <div class="container">
+        <nav class="desk">
+          <ul>
+            <li class="active"><a href="#">Events</a></li>
+            <li><a href="index.html">Nyheder</a></li>
+            <li><a href="404.html">Om Os</a></li>
+            <li><a href="404.html">Medlemsfordele</a></li>
+          </ul>
+        </nav>
+
+
+        <nav class="mob">
+          <div class="hamburger-btn">
+            <div class="toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+
+          <div class="search-btn">
+              <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <ul class="searchList ">
+              <li class="active"><input id="searchInput" class="inputBox full" type="text" placeholder="Search.."></li>
+          </ul>
+
+
+          <ul class="menuList" >
+              <li class="active"><a href="#">Events</a></li>
+              <li><a href="index.html">Nyheder</a></li>
+              <li><a href="404.html">Om Os</a></li>
+              <li><a href="404.html">Medlemsfordele</a></li>
+          </ul>
+        </nav>
+      </div>
+  </section>
+</header>
+
   <div id="mainWrapper">
     <h1 id="paymentHeading">Betaling</h1>
 
@@ -44,7 +92,7 @@
             <div>
                 <p class="paymentNo">2014-0722 465 857</p>
             </div>
-        </div> 
+        </div>
 
         <form action="tak.html">
             <input class="hiddenInput" type="text" name="firstname" id="firstname" required>

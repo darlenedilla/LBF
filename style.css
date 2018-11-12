@@ -63,6 +63,10 @@ body {
   border: none;
 }
 
+.fejlWrapper{
+  text-align: center;
+}
+
 .largeBtnByBack{
   display:inline-block;
   height: 40px;
@@ -74,6 +78,7 @@ body {
   font-size: 1.2em;
   color: #FCFCFC;
   border: none;
+
 }
 
 .tilbageknap {
@@ -82,9 +87,8 @@ body {
   shadow:none;
   background-color:#fcfcfc;
   color:black;
-  height:30px;
+  height:40px;
   width:100px;
-  float:left;
   margin-top:10px;
 }
 .tilbageknap i {
@@ -690,6 +694,10 @@ text-decoration:underline;
 
 #fejlBody h1 {
   margin-top:50px;
+  font-size: 2em;
+}
+#fejlBody h2 {
+  font-size: 1.5em;
 }
 
 #fejlKnap {
@@ -819,7 +827,7 @@ text-decoration:underline;
     width: 300px;
     margin-top: 0;
   }
-  
+
   .full{
     width: 600px;
   }

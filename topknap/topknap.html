@@ -3,34 +3,38 @@
 <head>
 <meta charset="utf-8">
 <title>topknap</title>
-<link href="topknapcss.css" rel="stylesheet" type="text/css">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
-<script>
-window.Squarespace.onInitialize(Y, function(){  
-  var amountScrolled = 300;
-  $(window).scroll(function() {
-    if ( $(window).scrollTop() > amountScrolled ) {
-      $('a.sf-back-to-top').fadeIn('slow');
+<link href="../../../../../Desktop/topknapcss.css" rel="stylesheet" type="text/css">
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
     } else {
-      $('a.sf-back-to-top').fadeOut('slow');
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
     }
-  });
-  $('a.sf-back-to-top').click(function() {
-    $('html, body').animate({
-      scrollTop: 0
-      }, 700);
-    return false;
-  });
 });
-</script>
-<!-- End of Back-to-Top script plugin for Squarespace -->
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
 </head>
 
 <body>
-<!-- Start of Back-to-Top link -->
-<a href="#" class="sf-back-to-top"><span class="arrow"></span>Top</a>
-<!-- End of Back-to-Top link -->
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+
+<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  
+<!-- Test the scroll -->
+<div style="height:2000px;">
+  
+  <h3>Scroll down</h3>
+  <h3><i class="icon-arrow-down"></i></h3>
+  
+</div>
 	
 </body>
 </html>

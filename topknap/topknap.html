@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>topknap</title>
+<link href="topknapcss.css" rel="stylesheet" type="text/css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<script>
+window.Squarespace.onInitialize(Y, function(){  
+  var amountScrolled = 300;
+  $(window).scroll(function() {
+    if ( $(window).scrollTop() > amountScrolled ) {
+      $('a.sf-back-to-top').fadeIn('slow');
+    } else {
+      $('a.sf-back-to-top').fadeOut('slow');
+    }
+  });
+  $('a.sf-back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+      }, 700);
+    return false;
+  });
+});
+</script>
+<!-- End of Back-to-Top script plugin for Squarespace -->
+</head>
+
+<body>
+<!-- Start of Back-to-Top link -->
+<a href="#" class="sf-back-to-top"><span class="arrow"></span>Top</a>
+<!-- End of Back-to-Top link -->
+	
+</body>
+</html>

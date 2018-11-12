@@ -413,6 +413,7 @@ nav img {
 
 .gridBox {
   margin-bottom:50px;
+  max-height:500px;
 }
 .grid-img {
   display:block;
@@ -650,7 +651,24 @@ text-decoration:underline;
   margin-bottom:15px;
 }
 
+#fejlBody {
+  width:90vw;
+  text-align:center;
+  margin:auto;
+  margin-top:200px;
+}
 
+.tilbageknap {
+  border:none;
+  shadow:none;
+  background-color:#fcfcfc;
+  color:black;
+  height:30px;
+  width:100px;
+}
+.tilbageknap i {
+  color:black;
+}
 
 /* HER ER ALT @MEDIA */
 @media screen and (max-width: 700px) {

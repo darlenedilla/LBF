@@ -209,16 +209,36 @@ var getParams = function (url) {
   function readMore() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
-    var btnText = document.getElementById("betingelserBtn");
+  var btnText = document.getElementById("betingelserBtn");
 
+    
+  if(window.innerWidth > 770){
     if (dots.style.display ==="none") {
-    dots.style.display = "inline";
-    document.getElementById("betingelsesbox").style.height="230px"
-    btnText.innerHTML = "Læs mere <i class=\"fa fa-chevron-down\"></i>";
-    moreText.style.display = "none";}
-  else {
-    dots.style.display = "none";
-    document.getElementById("betingelsesbox").style.height="100%"
-    btnText.innerHTML = "Læs mindre <i class=\"fa fa-chevron-up\"></i>";
-    moreText.style.display = "inline";
-    }}
+      dots.style.display = "inline";
+      document.getElementById("betingelsesbox").style.height="170px"
+      btnText.innerHTML = "Læs mere <i class=\"fa fa-chevron-down\"></i>";
+      moreText.style.display = "none";}
+      else {
+      dots.style.display = "none";
+      document.getElementById("betingelsesbox").style.height="50%"
+      btnText.innerHTML = "Læs mindre <i class=\"fa fa-chevron-up\"></i>";
+      moreText.style.display = "inline";
+      }
+  }
+
+  else{
+    if (dots.style.display ==="none") {
+      dots.style.display = "inline";
+      document.getElementById("betingelsesbox").style.height="250px"
+      btnText.innerHTML = "Læs mere <i class=\"fa fa-chevron-down\"></i>";
+      moreText.style.display = "none";
+      }
+      else {
+      dots.style.display = "none";
+      document.getElementById("betingelsesbox").style.height="100%"
+      btnText.innerHTML = "Læs mindre <i class=\"fa fa-chevron-up\"></i>";
+      moreText.style.display = "inline";
+      }
+  }
+
+}

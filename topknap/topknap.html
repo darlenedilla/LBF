@@ -3,38 +3,29 @@
 <head>
 <meta charset="utf-8">
 <title>topknap</title>
-<link href="../../../../../Desktop/topknapcss.css" rel="stylesheet" type="text/css">
-<!-- ===== Scroll to Top ====--> 
-$(window).scroll(function() {
-    if ($(this).scrollTop() = 50) {        <!-- If page is scrolled more than 50px -->
-        $('#return-to-top').fadeIn(200);    <!-- Fade in the arrow -->
-    } else {
-        $('#return-to-top').fadeOut(200);   <!-- Else fade out the arrow -->
-    }
-});
-$('#return-to-top').click(function() {      <!-- When arrow is clicked -->
-    $('body,html').animate({
-        scrollTop : 0                       <!-- Scroll to top of body -->
-    }, 500);
-});
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="../../../../../Desktop/topknapcss.css" rel="stylesheet" type="text/css">
+
+<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+	{document.getElementById("myBtn").style.display = "block";}
+	else
+	{document.getElementById("myBtn").style.display = "none";}}
+
+	// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0;} // For Chrome, Firefox, IE and Opera	
+</script>
 </head>
 
-<body>
-<!-- Return to Top -->
-<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
-
-
-<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
-  
-<!-- Test the scroll -->
-<div style="height:2000px;">
-  
-  <h3>Scroll down</h3>
-  <h3><i class="icon-arrow-down"></i></h3>
-  
-</div>
 	
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
 </html>

@@ -7,14 +7,12 @@
   box-sizing: border-box;
 }
 
-html {
-  height:100vh;
-}
 
 .mainWrapper{
-  height:100vh;
-  overflow-x:hidden;
+  height: 110vh;
+  overflow: hidden;
 }
+
 #indexMainWrapper {
   margin-bottom:0;
 }
@@ -63,6 +61,34 @@ body {
   font-size: 1.2em;
   color: #FCFCFC;
   border: none;
+}
+
+.largeBtnByBack{
+  display:inline-block;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #5FA8D3;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #FCFCFC;
+  border: none;
+}
+
+.tilbageknap {
+  display:inline-block;
+  border:none;
+  shadow:none;
+  background-color:#fcfcfc;
+  color:black;
+  height:30px;
+  width:100px;
+  float:left;
+  margin-top:10px;
+}
+.tilbageknap i {
+  color:black;
 }
 
 .largeBtn:hover{
@@ -160,8 +186,6 @@ body {
   visibility: hidden;
   display: none;
 }
-
-
 
 /***********SLUT OPRET MEDLEMSKAB OG FAKTURA SAMT BETALING - DARLENE**************/
 
@@ -417,6 +441,7 @@ nav img {
 
 .gridBox {
   margin-bottom:50px;
+  max-height:500px;
 }
 .grid-img {
   display:block;
@@ -523,7 +548,7 @@ nav img {
 #footer {
   position:absolute;
   bottom:0;
-  top: 100%;
+  top: 120%;
   width:100%;
   background-color:#0d1b1e;
   padding:10px;
@@ -634,7 +659,7 @@ text-decoration:underline;
 }
 
 #betingelsesbox, .reminder {
-  height:230px;
+  height:250px;
   background-color:#efefef;
   text-align:left;
   vertical-align:middle;
@@ -655,6 +680,40 @@ text-decoration:underline;
 }
 
 
+/* 404 PAGE CSS */
+#fejlBody {
+  width:90%;
+  text-align:center;
+  margin:auto;
+  margin-top:200px;
+}
+
+#fejlBody h1 {
+  margin-top:50px;
+}
+
+#fejlKnap {
+  display:inline-block;
+  width:75%;
+}
+
+#swirlyBirds {
+  width:80px;
+  height:60px;
+}
+
+.loadingIcon {
+    -webkit-animation: rotate 6s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
 
 /* HER ER ALT @MEDIA */
 @media screen and (max-width: 700px) {
@@ -717,7 +776,8 @@ text-decoration:underline;
     display:none;
   }
   .gridCTA {
-    margin-top:75%;
+    margin-top:80%;
+    margin-left: 30%;
   }
   #facebookIcon {
     right:0;
@@ -736,5 +796,91 @@ text-decoration:underline;
     width:100%;
     margin-top:100px;
   }
+
+}
+
+@media screen and (min-width: 770px) {
+  #membershipHeading, #paymentHeading, #thankYouHeading{
+    font-size: 2em;
+    margin-top: 7%;
+    margin-bottom: 2%;
+  }
+
+  #signUpForm, #paymentForm{
+    width: 620px;
+    top: 300px;
+    left: 50%;
+    margin-top: -310px;
+    margin-left: -310px;
+    margin-bottom:50px;
+  }
+
+  .medium, .large, .small{
+    width: 300px;
+    margin-top: 0;
+  }
+  
+  .full{
+    width: 600px;
+  }
+
+  .paymentWrapper{
+    font-size: 1.2em;
+    width: 600px;
+
+  }
+
+  .submit, .link{
+    height: 40px;
+    width: 610px;
+  }
+
+  .largeBtn{
+    height: 40px;
+    width: 610px;
+  }
+
+#betingelsesbox{
+    display: block;
+    width: 900px;
+    height: 170px;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 2%;
+  }
+
+#paymentIntro{
+    height: 100px;
+    width: 610px;
+    display: block;
+    margin-top: 15px;
+  }
+
+.paymentNo{
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+
+#thankYouName, #thankYouText1, #thankYouText2{
+    width: 600px;
+    padding-top: 100px;
+    margin: auto;
+}
+
+
+#thankYouText1, #thankYouText2{
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+#thankYouText1{
+  padding-top: 50px;
+}
+
+#lastPageWrapper{
+    width: 600px;
+    overflow: hidden;
+}
 
 }

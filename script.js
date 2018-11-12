@@ -54,6 +54,36 @@ var getParams = function (url) {
           document.getElementById('gridOverlay1').style.borderBottomRightRadius="0px";
         }
 
+        // event grid 2
+
+        function gridOverlayed2(){
+          document.getElementById('gridOverlay2').style.height="350px";
+          document.getElementById('gridOverlay2').style.borderBottomLeftRadius="5px";
+          document.getElementById('gridOverlay2').style.borderBottomRightRadius="5px";
+          document.getElementById('gridContent2').style.opacity="1";
+        }
+        function gridNoOverlay2(){
+          document.getElementById('gridOverlay2').style.height="65px";
+          document.getElementById('gridContent2').style.opacity="0";
+          document.getElementById('gridOverlay2').style.borderBottomLeftRadius="0px";
+          document.getElementById('gridOverlay2').style.borderBottomRightRadius="0px";
+        }
+
+        // event grid 3
+
+        function gridOverlayed3(){
+          document.getElementById('gridOverlay3').style.height="350px";
+          document.getElementById('gridOverlay3').style.borderBottomLeftRadius="5px";
+          document.getElementById('gridOverlay3').style.borderBottomRightRadius="5px";
+          document.getElementById('gridContent3').style.opacity="1";
+        }
+        function gridNoOverlay3(){
+          document.getElementById('gridOverlay3').style.height="65px";
+          document.getElementById('gridContent3').style.opacity="0";
+          document.getElementById('gridOverlay3').style.borderBottomLeftRadius="0px";
+          document.getElementById('gridOverlay3').style.borderBottomRightRadius="0px";
+        }
+
         //News grid jscript
 
         function gridOverlayedNews1(){
@@ -67,6 +97,36 @@ var getParams = function (url) {
           document.getElementById('gridContentNews1').style.opacity="0";
           document.getElementById('gridOverlayNews1').style.borderBottomLeftRadius="0px";
           document.getElementById('gridOverlayNews1').style.borderBottomRightRadius="0px";
+        }
+
+        //News grid 2
+
+        function gridOverlayedNews2(){
+          document.getElementById('gridOverlayNews2').style.height="350px";
+          document.getElementById('gridContentNews2').style.opacity="1";
+          document.getElementById('gridOverlayNews2').style.borderBottomLeftRadius="0px";
+          document.getElementById('gridOverlayNews2').style.borderBottomRightRadius="0px";
+        }
+        function gridNoOverlayNews2(){
+          document.getElementById('gridOverlayNews2').style.height="65px";
+          document.getElementById('gridContentNews2').style.opacity="0";
+          document.getElementById('gridOverlayNews2').style.borderBottomLeftRadius="0px";
+          document.getElementById('gridOverlayNews2').style.borderBottomRightRadius="0px";
+        }
+
+        // News grid 3
+
+        function gridOverlayedNews3(){
+          document.getElementById('gridOverlayNews3').style.height="350px";
+          document.getElementById('gridContentNews3').style.opacity="1";
+          document.getElementById('gridOverlayNews3').style.borderBottomLeftRadius="0px";
+          document.getElementById('gridOverlayNews3').style.borderBottomRightRadius="0px";
+        }
+        function gridNoOverlayNews3(){
+          document.getElementById('gridOverlayNews3').style.height="65px";
+          document.getElementById('gridContentNews3').style.opacity="0";
+          document.getElementById('gridOverlayNews3').style.borderBottomLeftRadius="0px";
+          document.getElementById('gridOverlayNews3').style.borderBottomRightRadius="0px";
         }
 // HERE ENDS GRID JSCRIPT
 
@@ -149,16 +209,36 @@ var getParams = function (url) {
   function readMore() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
-    var btnText = document.getElementById("betingelserBtn");
+  var btnText = document.getElementById("betingelserBtn");
 
+    
+  if(window.innerWidth > 770){
     if (dots.style.display ==="none") {
-    dots.style.display = "inline";
-    document.getElementById("betingelsesbox").style.height="230px"
-    btnText.innerHTML = "Læs mere <i class=\"fa fa-chevron-down\"></i>";
-    moreText.style.display = "none";}
-  else {
-    dots.style.display = "none";
-    document.getElementById("betingelsesbox").style.height="100%"
-    btnText.innerHTML = "Læs mindre <i class=\"fa fa-chevron-up\"></i>";
-    moreText.style.display = "inline";
-    }}
+      dots.style.display = "inline";
+      document.getElementById("betingelsesbox").style.height="170px"
+      btnText.innerHTML = "Læs mere <i class=\"fa fa-chevron-down\"></i>";
+      moreText.style.display = "none";}
+      else {
+      dots.style.display = "none";
+      document.getElementById("betingelsesbox").style.height="50%"
+      btnText.innerHTML = "Læs mindre <i class=\"fa fa-chevron-up\"></i>";
+      moreText.style.display = "inline";
+      }
+  }
+
+  else{
+    if (dots.style.display ==="none") {
+      dots.style.display = "inline";
+      document.getElementById("betingelsesbox").style.height="250px"
+      btnText.innerHTML = "Læs mere <i class=\"fa fa-chevron-down\"></i>";
+      moreText.style.display = "none";
+      }
+      else {
+      dots.style.display = "none";
+      document.getElementById("betingelsesbox").style.height="100%"
+      btnText.innerHTML = "Læs mindre <i class=\"fa fa-chevron-up\"></i>";
+      moreText.style.display = "inline";
+      }
+  }
+
+}

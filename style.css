@@ -31,7 +31,7 @@ body {
 #membershipHeading, #paymentHeading, #thankYouHeading{
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2em;
     color: #0d1b1e;
     text-align: center;
     margin-top: 20%;
@@ -79,7 +79,7 @@ body {
   font-size: 1.2em;
   color: #FCFCFC;
   border: none;
-
+  cursor:pointer;
 }
 
 .tilbageknap {
@@ -93,6 +93,7 @@ body {
   margin-top:20px;
   padding:5px;
   float:left;
+  cursor:pointer;
 }
 .tilbageknap i {
   color:black;
@@ -262,7 +263,6 @@ nav.desk ul #searchInput {
   width: 100%;
   background: #5FA8D3;
   height: 60px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 nav.desk ul {
@@ -291,8 +291,7 @@ nav.mob ul li:hover{
 nav.desk ul li.active,
 nav.mob ul li.active{
   background: #efefef;
-  max-height: 70px;
-  min-height:65px;
+  height:60px;
 }
 
 nav ul li a {
@@ -450,10 +449,12 @@ nav img {
 .gridBox {
   margin-bottom:50px;
   max-height:500px;
+  min-height:300px;
 }
 .grid-img {
   display:block;
   width:100%;
+  min-height:100%;
   border-radius:5px;
 }
 
@@ -470,7 +471,7 @@ nav img {
 
 .gridOverlay h2 {
   position:absolute;
-  font-size:20px;
+  font-size:1.2em;
   top:0;
   width:100%;
 }
@@ -478,7 +479,7 @@ nav img {
   position:absolute;
   width:100%;
   top:40px;
-  font-size:10px;
+  font-size:.8em;
 }
 
 .pullerArrow {
@@ -498,14 +499,14 @@ nav img {
   background-color:#efefef;
   left:40%;
   top:90%;
-  font-size:40px;
+  font-size:2em;
 }
 
 .grid-content {
   position:absolute;
   display:block;
   opacity:0;
-  font-size:20px;
+  font-size:1.2em;
   top:65px;
   left:5%;
   height:80%;
@@ -535,7 +536,7 @@ nav img {
 .gridCTA {
   position:absolute;
   margin-top:73%;
-  margin-left:22%;
+  margin-left:18%;
   width:120px;
   height:120px;
   padding-top:45px;
@@ -568,7 +569,7 @@ nav img {
 
 #footerTextBox {
   font-family:'Exo 2', sans-serif;
-  font-size:1em;
+  font-size:1.2em;
   float:left;
 }
 #facebookIcon {
@@ -667,7 +668,7 @@ text-decoration:underline;
 }
 
 #betingelsesbox, .reminder {
-  height:200px;
+  height:230px;
   background-color:#efefef;
   text-align:left;
   vertical-align:middle;
@@ -701,7 +702,7 @@ text-decoration:underline;
   font-size: 2em;
 }
 #fejlBody h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 #fejlKnap {
@@ -804,14 +805,14 @@ text-decoration:underline;
     right:10%;
     top:40%;
     font-family:'Exo 2', sans-serif;
-    font-size:2em;
+    font-size:1.2em;
     transition-duration:0.5s;
   }
   #bigGridWrapper {
     width:80%;
-    margin-top:100px;
     margin:auto;
     margin-top:100px;
+    margin-left:5%;
   }
 
   #membershipHeading, #paymentHeading, #thankYouHeading{
@@ -884,7 +885,7 @@ text-decoration:underline;
 
 
 #thankYouText1, #thankYouText2{
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: justify;
 }
 
@@ -902,9 +903,11 @@ text-decoration:underline;
 .largeBtnByBack {
   max-width:500px;
   min-width:450px;
+  cursor:pointer;
 }
 .tilbageknap {
   float:none;
+  cursor:pointer;
 }
 
 }

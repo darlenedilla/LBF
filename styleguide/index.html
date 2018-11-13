@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Styleguide</title>
+    <link rel="stylesheet" href="styleguide.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+    <script>
+        function scrollto(div)
+    {
+     $('html,body').animate(
+     {
+      scrollTop: $("#"+div).offset().top - 150
+     },'slow');
+    }
+    </script>
+
+  </head>
+  <body>
+
+    <header id="headerWrapper">
+            <div>
+                <a href="index.html"><h1 id="mainHeading">STYLEGUIDE FOR LANGESKOV BORGERFORENING</h1></a>
+            </div>
+    </header>
+
+    <nav id="menu">
+            <ul id="menuList">
+                <li><a onclick="scrollto('colors');" >Farver</a></li>
+                <li><a onclick="scrollto('typography');" >Typografi</a></li>
+                <li><a onclick="scrollto('buttons');" >Knapper og Links</a></li>
+                <li><a onclick="scrollto('forms');" >Formular</a></li>
+                <li><a onclick="scrollto('images');" >Billeder</a></li>
+            </ul>
+    </nav>
+
+    <div class="container">
+        <div id="colors">
+            <h2>Farver med farvekode</h2>
+            <ul id="colorList">
+                <li class="colorItem"><div class="colorCode" id="blue"></div>
+                    <span class="colorName">Carolina Blue</span>
+                    <span class="colorName">Hex: #5FA8D3</span>
+                </li>
+
+                <li class="colorItem"><div class="colorCode" id="yellow"></div>
+                    <span class="colorName">Sunglow</span>
+                    <span class="colorName">Hex: #FFCA3A</span>
+                </li>
+
+                <li class="colorItem"><div class="colorCode" id="white"></div>
+                    <span class="colorName">Baby Powder</span>
+                    <span class="colorName">Hex: #FCFCFC</span></li>
+
+                <li class="colorItem"><div class="colorCode" id="grey"></div>
+                    <span class="colorName">Isabelline</span>
+                    <span class="colorName">Hex: #EFEFEF</span></li>
+
+                <li class="colorItem"><div class="colorCode" id="black"></div>
+                    <span class="colorName">Eerie Black</span>
+                    <span class="colorName">Hex: #01DB1E</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="typography">
+            <h2>Skriftyper og størrelser</h2>
+            <div id="typographyWrapper">
+                <div id="headlines" class="typographyBox"></div>
+                <div id="bodyText" class="typographyBox"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="buttons">
+            <h2>Knapper og links</h2>
+            <div id="buttonWrapper">
+                <form>
+                    <button type="submit" class="largeBtn submit">Fortsæt <i class="fa fa-chevron-right"></i></button>
+                    <label>Knap brugt i oprettelsesflow</label>
+                </form>
+                <div id="buttonCode">
+                    <p class="codeSnippet">
+                    <pre>&lt;button type="submit" class="largeBtn submit"&gt;Fortsæt &lt;i class="fa fa-chevron-right"&gt&lt;/i&gt&lt;/button&gt</pre>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="forms">
+            <h1>If you have any question or query you can contact us at <br>talkerscode@gmail.com <br><br>or you can fill the form below</h1>
+            <input type="text" placeholder="Name">
+            <textarea placeholder="Message"></textarea>
+            <input type="submit" value="SEND">
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="images">
+            <h1>If you have any question or query you can contact us at <br>talkerscode@gmail.com <br><br>or you can fill the form below</h1>
+            <input type="text" placeholder="Name">
+            <textarea placeholder="Message"></textarea>
+            <input type="submit" value="SEND">
+        </div>
+    </div>
+
+  </body>
+</html>

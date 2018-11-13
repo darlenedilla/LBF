@@ -211,8 +211,8 @@ var getParams = function (url) {
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("betingelserBtn");
 
-    
-  if(window.innerWidth > 770){
+
+  if(window.innerWidth > 440){
     if (dots.style.display ==="none") {
       dots.style.display = "inline";
       document.getElementById("betingelsesbox").style.height="170px"
@@ -220,7 +220,7 @@ var getParams = function (url) {
       moreText.style.display = "none";}
       else {
       dots.style.display = "none";
-      document.getElementById("betingelsesbox").style.height="50%"
+      document.getElementById("betingelsesbox").style.height="300px"
       btnText.innerHTML = "Læs mindre <i class=\"fa fa-chevron-up\"></i>";
       moreText.style.display = "inline";
       }
@@ -229,15 +229,17 @@ var getParams = function (url) {
   else{
     if (dots.style.display ==="none") {
       dots.style.display = "inline";
-      document.getElementById("betingelsesbox").style.height="250px"
+      document.getElementById("betingelsesbox").style.height="200px"
       btnText.innerHTML = "Læs mere <i class=\"fa fa-chevron-down\"></i>";
       moreText.style.display = "none";
+      document.getElementById("footer").style.top="100%";
       }
       else {
       dots.style.display = "none";
-      document.getElementById("betingelsesbox").style.height="100%"
+      document.getElementById("betingelsesbox").style.height="550px"
       btnText.innerHTML = "Læs mindre <i class=\"fa fa-chevron-up\"></i>";
       moreText.style.display = "inline";
+      document.getElementById("footer").style.top="130%";
       }
   }
 

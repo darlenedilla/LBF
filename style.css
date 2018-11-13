@@ -79,7 +79,7 @@ body {
   font-size: 1.2em;
   color: #FCFCFC;
   border: none;
-
+  cursor:pointer;
 }
 
 .tilbageknap {
@@ -93,6 +93,7 @@ body {
   margin-top:20px;
   padding:5px;
   float:left;
+  cursor:pointer;
 }
 .tilbageknap i {
   color:black;
@@ -262,7 +263,6 @@ nav.desk ul #searchInput {
   width: 100%;
   background: #5FA8D3;
   height: 60px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 nav.desk ul {
@@ -291,8 +291,7 @@ nav.mob ul li:hover{
 nav.desk ul li.active,
 nav.mob ul li.active{
   background: #efefef;
-  max-height: 70px;
-  min-height:65px;
+  height:60px;
 }
 
 nav ul li a {
@@ -902,9 +901,11 @@ text-decoration:underline;
 .largeBtnByBack {
   max-width:500px;
   min-width:450px;
+  cursor:pointer;
 }
 .tilbageknap {
   float:none;
+  cursor:pointer;
 }
 
 }

@@ -535,7 +535,7 @@ nav img {
 .gridCTA {
   position:absolute;
   margin-top:73%;
-  margin-left:22%;
+  margin-left:18%;
   width:120px;
   height:120px;
   padding-top:45px;
@@ -809,9 +809,9 @@ text-decoration:underline;
   }
   #bigGridWrapper {
     width:80%;
-    margin-top:100px;
     margin:auto;
     margin-top:100px;
+    margin-left:5%;
   }
 
   #membershipHeading, #paymentHeading, #thankYouHeading{

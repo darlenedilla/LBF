@@ -449,10 +449,12 @@ nav img {
 .gridBox {
   margin-bottom:50px;
   max-height:500px;
+  min-height:300px;
 }
 .grid-img {
   display:block;
   width:100%;
+  min-height:100%;
   border-radius:5px;
 }
 

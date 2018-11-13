@@ -229,17 +229,17 @@ var getParams = function (url) {
   else{
     if (dots.style.display ==="none") {
       dots.style.display = "inline";
-      document.getElementById("betingelsesbox").style.height="200px"
+      document.getElementById("betingelsesbox").style.height="230px"
       btnText.innerHTML = "Læs mere <i class=\"fa fa-chevron-down\"></i>";
       moreText.style.display = "none";
       document.getElementById("footer").style.top="100%";
       }
       else {
       dots.style.display = "none";
-      document.getElementById("betingelsesbox").style.height="550px"
+      document.getElementById("betingelsesbox").style.height="615px"
       btnText.innerHTML = "Læs mindre <i class=\"fa fa-chevron-up\"></i>";
       moreText.style.display = "inline";
-      document.getElementById("footer").style.top="130%";
+      document.getElementById("footer").style.top="152%";
       }
   }
 

@@ -79,7 +79,7 @@ body {
   font-size: 1.2em;
   color: #FCFCFC;
   border: none;
-
+  cursor:pointer;
 }
 
 .tilbageknap {
@@ -93,6 +93,7 @@ body {
   margin-top:20px;
   padding:5px;
   float:left;
+  cursor:pointer;
 }
 .tilbageknap i {
   color:black;
@@ -900,9 +901,11 @@ text-decoration:underline;
 .largeBtnByBack {
   max-width:500px;
   min-width:450px;
+  cursor:pointer;
 }
 .tilbageknap {
   float:none;
+  cursor:pointer;
 }
 
 }

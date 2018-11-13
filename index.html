@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Atoms:Grid</title>
@@ -44,7 +44,7 @@
 
           <nav class="mob">
             <div class="hamburger-btn">
-              <div class="toggle">
+              <div id="toggle" onclick="toggleMenu(); toggleClass();">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -54,14 +54,14 @@
 
 
             <div class="search-btn">
-                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa fa-search" aria-hidden="true" onclick="toggleSearch(); removeClass();"></i>
             </div>
-            <ul class="searchList ">
+            <ul id="searchList">
                 <li class="active"><input id="searchInput" class="inputBox full" type="text" placeholder="Search.."></li>
             </ul>
 
 
-            <ul class="menuList" >
+            <ul id="menuList" >
               <li class="active"><a href="index.html">Forside</a></li>
               <li><a href="404.html">Om Os</a></li>
               <li><a href="404.html">Medlemsfordele</a></li>

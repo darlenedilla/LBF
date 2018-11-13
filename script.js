@@ -166,21 +166,69 @@ var getParams = function (url) {
 
   // toggle menu SCRIPT //
 
+  function toggleMenu(){
+    var menuList = document.getElementById('menuList');
+    var searchList = document.getElementById('searchList');
+
+    if (menuList.classList.contains('active')) {
+      menuList.classList.remove('active');
+    }
+    else{
+      menuList.classList.add('active');
+    }
+    searchList.classList.remove('active');
+  }
+
+  function toggleSearch(){
+    var menuList = document.getElementById('menuList');
+    var searchList = document.getElementById('searchList');
+
+    if (searchList.classList.contains('active')) {
+      searchList.classList.remove('active');
+    }
+    else{
+      searchList.classList.add('active');
+    }
+    menuList.classList.remove('active');
+  }
+
+  function toggleClass(){
+    var toggle = document.getElementById('toggle');
+    toggle.classList.toggle('activetoggle');
+  }
+
+  function removeClass(){
+    var toggle = document.getElementById('toggle');
+    toggle.classList.remove('activetoggle');
+  }
+
+  
+
+  /*$('.toggle').click(function(){
+    $('.toggle').toggleClass('activetoggle')
+  });
+
+  $('.fa-search').click(function(){
+    $('.toggle').removeClass('activetoggle')
+  })*/
+
+
   $(document).ready(function(){
     $(".hamburger-btn .fa-times").hide();
 
-    $(".toggle").click(function(){
+    /*$(".toggle").click(function(){
       if($(".menuList").hasClass("active")){
         $(".menuList").removeClass("active");
+        console.log("Test")
       }
       else{
         $(".menuList").addClass("active");
       }
       $(".searchList").removeClass("active");
-      console.log("Hello world!Burger")
-    })
+      console.log("Test2");
+    });*/
 
-  $(".fa-search").click(function(){
+  /*$(".fa-search").click(function(){
     if($(".searchList").hasClass("active")){
       $(".searchList").removeClass("active");
     }
@@ -189,19 +237,11 @@ var getParams = function (url) {
     }
     $(".menuList").removeClass("active");
     console.log("Hello world!")
-  });
+  });*/
 
   // BURGER MENU ANIMATION //
-
-  $('.toggle').click(function(){
-    $('.toggle').toggleClass('activetoggle')
   });
-
-  $('.fa-search').click(function(){
-    $('.toggle').removeClass('activetoggle')
-  })
-
-  });
+  
 
 
   // CINDY BETINGELSER SCRIPT //

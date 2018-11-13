@@ -34,32 +34,32 @@
 
 
       <nav class="mob">
-        <div class="hamburger-btn">
-          <div class="toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="hamburger-btn">
+            <div id="toggle" onclick="toggleMenu(); toggleClass();">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-        </div>
 
 
-        <div class="search-btn">
-            <i class="fa fa-search" aria-hidden="true"></i>
-        </div>
-        <ul class="searchList ">
-            <li class="active"><input id="searchInput" class="inputBox full" type="text" placeholder="Search.."></li>
-        </ul>
+          <div class="search-btn">
+              <i class="fa fa-search" aria-hidden="true" onclick="toggleSearch(); removeClass();"></i>
+          </div>
+          <ul id="searchList">
+              <li class="active"><input id="searchInput" class="inputBox full" type="text" placeholder="Search.."></li>
+          </ul>
 
 
-        <ul class="menuList" >
-          <li class="active"><a href="index.html">Forside</a></li>
-          <li><a href="404.html">Om Os</a></li>
-          <li><a href="404.html">Medlemsfordele</a></li>
-          <li><a href="oprettelse.html">Bliv medlem</a></li>
-          <li><a href="404.html">Log ind</a></li>
-        </ul>
-      </nav>
+          <ul id="menuList" >
+            <li class="active"><a href="index.html">Forside</a></li>
+            <li><a href="404.html">Om Os</a></li>
+            <li><a href="404.html">Medlemsfordele</a></li>
+            <li><a href="oprettelse.html">Bliv medlem</a></li>
+            <li><a href="404.html">Log ind</a></li>
+          </ul>
+        </nav>
     </div>
 </section>
 

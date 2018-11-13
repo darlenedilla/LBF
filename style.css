@@ -223,7 +223,7 @@ body {
   width:100%;
 }
 
-.fa .fa-search, .toggle {
+.fa .fa-search, #toggle {
   display: inline-block;
   padding: 5px;
   position: relative;
@@ -601,7 +601,7 @@ nav img {
 
 /* HERE STARTS STYLEBURGERANIMATION CSS */
 
-.toggle {
+#toggle {
   position: absolute;
   top: 75%;
   left: 75%;
@@ -612,7 +612,7 @@ nav img {
   cursor: pointer;
 }
 
-.toggle span{
+#toggle span{
   display: block;
   width: 40px;
   height: 5px;
@@ -625,29 +625,29 @@ nav img {
   transition: .5s;
 }
 
-.toggle span:nth-child(1){
+#toggle span:nth-child(1){
   transform: translate(-50%, -50%) translateY(-10px);
     transition: .2s;
 }
-.toggle span:nth-child(4){
+#toggle span:nth-child(4){
   transform: translate(-50%, -50%) translateY(10px);
     transition: .2s;
 }
 
-.toggle.activetoggle span:nth-child(1){
+#toggle.activetoggle span:nth-child(1){
   transform: translate(-50%, -50%) translateY(-35px);
   opacity: 0;
 }
-.toggle.activetoggle span:nth-child(4){
+#toggle.activetoggle span:nth-child(4){
   transform: translate(-50%, -50%) translateY(35px);
   opacity: 0;
 }
 
-.toggle.activetoggle span:nth-child(2){
+#toggle.activetoggle span:nth-child(2){
   transform: translate(-50%, -50%) rotate(45deg);
   transition-delay: .2s;
 }
-.toggle.activetoggle span:nth-child(3){
+#toggle.activetoggle span:nth-child(3){
   transform: translate(-50%, -50%) rotate(-45deg);
   transition-delay: .2s;
 }
@@ -743,7 +743,7 @@ text-decoration:underline;
     position: relative;
   }
 
-  .hamburger-btn .toggle {
+  .hamburger-btn #toggle {
     position: fixed;
     left: 55px;
     top: 30px;

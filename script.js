@@ -239,7 +239,7 @@ var getParams = function (url) {
       document.getElementById("betingelsesbox").style.height="615px"
       btnText.innerHTML = "Læs mindre <i class=\"fa fa-chevron-up\"></i>";
       moreText.style.display = "inline";
-      document.getElementById("footer").style.top="152%";
+      document.getElementById("footer").style.top="155%";
       }
   }
 

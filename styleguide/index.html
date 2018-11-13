@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js" defer></script>
     <script>
-        function scrollto(div)
-    {
-     $('html,body').animate(
-     {
-      scrollTop: $("#"+div).offset().top - 150
-     },'slow');
+    function scrollto(div){
+        $('html,body').animate({
+            scrollTop: $("#"+div).offset().top - 150
+        },'slow');
     }
+
     </script>
 
   </head>
@@ -30,11 +29,11 @@
 
     <nav id="menu">
             <ul id="menuList">
-                <li><a onclick="scrollto('colors');" >Farver</a></li>
-                <li><a onclick="scrollto('typography');" >Typografi</a></li>
-                <li><a onclick="scrollto('buttons');" >Knapper og Links</a></li>
-                <li><a onclick="scrollto('forms');" >Formular</a></li>
-                <li><a onclick="scrollto('images');" >Billeder</a></li>
+                <li class="menuItem active"><a onclick="scrollto('colors');">Farver</a></li>
+                <li class="menuItem"><a onclick="scrollto('typography');" >Typografi</a></li>
+                <li class="menuItem"><a onclick="scrollto('buttons');" >Knapper og Links</a></li>
+                <li class="menuItem"><a onclick="scrollto('forms');" >Formular</a></li>
+                <li class="menuItem"><a onclick="scrollto('images');" >Billeder</a></li>
             </ul>
     </nav>
 
@@ -78,38 +77,161 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container"><!--Container til knapper-->
         <div id="buttons">
             <h2>Knapper og links</h2>
-            <div id="buttonWrapper">
-                <form>
-                    <button type="submit" class="largeBtn submit">Fortsæt <i class="fa fa-chevron-right"></i></button>
-                    <label>Knap brugt i oprettelsesflow</label>
-                </form>
-                <div id="buttonCode">
-                    <p class="codeSnippet">
-                    <pre>&lt;button type="submit" class="largeBtn submit"&gt;Fortsæt &lt;i class="fa fa-chevron-right"&gt&lt;/i&gt&lt;/button&gt</pre>
-                    </p>
-                </div>
-            </div>
+                    <div class="row"><!--ROW 1-->
+                            <div class="column">
+                                <div class="buttonDiv">
+                                    <button type="submit" class="largeBtn submit">Fortsæt <i class="fa fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div id="buttonCode">
+                                    <div class="codeSnippet">
+                                        <span><strong>HTML:</strong></span>
+                                        <span><code>&lt;button type="submit" class="largeBtn submit"&gt;Fortsæt &lt;i class="fa fa-chevron-right"&gt&lt;/i&gt&lt;/button&gt</code></span>
+                                        <br>
+                                        <span><strong>CSS:</strong></span>
+                                        <span><code>.largeBtn{
+                                                        height: 40px;
+                                                        width: 100%;
+                                                        border-radius: 5px;
+                                                        background-color: #5FA8D3;
+                                                        font-family: 'Exo 2', sans-serif;
+                                                        font-weight: 700;
+                                                        font-size: 1.2em;
+                                                        color: #FCFCFC;
+                                                        border: none;
+                                                        margin-top: 30px;
+                                                    }
+                                        </code></span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div><!--Row 1 slut-->
+
+                    <div class="row"><!--ROW 2-->
+                        <div class="column">
+                            <div class="buttonDiv">
+                                <a href="404.html" class="gridButton">Læs mere &#8250;</a>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div id="buttonCode">
+                                <div class="codeSnippet">
+                                    <span><strong>HTML:</strong></span>
+                                    <span><code>&lt;a href="404.html" class="gridButton"&gt;Læs mere &#8250;&lt;/a&gt;</code></span>
+                                    <br>
+                                    <span><strong>CSS:</strong></span>
+                                    <span><code>.gridButton {
+                                            position:absolute;
+                                            left:25%;
+                                            margin-top:50px;
+                                            width:50%;
+                                            border-radius: 5px;
+                                            background-color: #5FA8D3;
+                                            font-family: 'Exo 2', sans-serif;
+                                            font-weight: 700;
+                                            font-size: 1.2em;
+                                            color: #FCFCFC;
+                                            border: none;
+                                            padding:10px;
+                                          }
+                                    </code></span>
+                                </div>
+                            </div>
+                        </div>
+                </div><!--Row 2 slut-->
+
+                <div class="row"><!--ROW 3-->
+                    <div class="column">
+                        <div class="buttonDiv">
+                            <a href="oprettelse.html" class="gridCTA">Tilmeld</a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div id="buttonCode">
+                            <div class="codeSnippet">
+                                <span><strong>HTML:</strong></span>
+                                <span><code>&lt;a href="oprettelse.html" class="gridCTA">Tilmeld&lt;/a&gt;</code></span>
+                                <br>
+                                <span><strong>CSS:</strong></span>
+                                <span><code>.gridCTA {
+                                        width:120px;
+                                        height:120px;
+                                        padding-top:45px;
+                                        border-radius: 50%;
+                                        background-color: #ffca3a;
+                                        font-family: 'Exo 2', sans-serif;
+                                        font-weight: 700;
+                                        font-size: 1.2em;
+                                        text-decoration:none;
+                                        color: #0d1b1e;
+                                        box-shadow:5px 5px 10px rgba(0, 0, 0, .2);
+                                      }
+                                </code></span>
+                            </div>
+                        </div>
+                    </div>
+            </div><!--Row 3 slut-->
         </div>
-    </div>
+    </div><!--Container til knapper og links-->
 
     <div class="container">
         <div id="forms">
-            <h1>If you have any question or query you can contact us at <br>talkerscode@gmail.com <br><br>or you can fill the form below</h1>
-            <input type="text" placeholder="Name">
-            <textarea placeholder="Message"></textarea>
-            <input type="submit" value="SEND">
+            <h2>Formularer</h2>
+            <form id="signUpForm" action="faktura.html" method="GET">
+                    <input class="inputBox medium" type="text" name="firstname" placeholder="Fornavn" required>
+                    <input class="inputBox medium" type="text" name="lastname" placeholder="Efternavn" required>
+                    <input class="inputBox large" type="text" name="address" placeholder="Adresse" required>
+                        <select class="dropdown small" name="postnr" required>
+                            <option>Post Nr.</option>
+                            <option value="5550">5550 Langeskov</option>
+                        </select>
+                    <input class="inputBox large" type="email" name="email" placeholder="E-mail" required>
+                    <input class="inputBox small" type="phone" name="phone" placeholder="Tlf. Nr." required>
+        
+                    <label for="dropdown" id="dropdownHeading">I hustanden er der:</label>
+                    <br>
+                    <select name="Voksne" class="dropdown medium" required>
+                        <option selected value="0">0 voksne</option>
+                        <option value="1">1 voksen</option>
+                        <option value="2">2 voksne</option>
+                        <option value="3">3 voksne</option>
+                        <option value="4">4 voksne</option>
+                        <option value="5">5 voksne</option>
+                        <option value="6">6 voksne</option>
+                        <option value="7">7 voksne</option>
+                        <option value="8">8 voksne</option>
+                        <option value="9">9 voksne</option>
+                        <option value="10">10 voksne</option>
+                    </select>
+                    <select name="Børn" class="dropdown medium"required>
+                        <option selected value="0">0 børn</option>
+                        <option value="1">1 barn</option>
+                        <option value="2">2 børn</option>
+                        <option value="3">3 børn</option>
+                        <option value="4">4 børn</option>
+                        <option value="5">5 børn</option>
+                        <option value="6">6 børn</option>
+                        <option value="7">7 børn</option>
+                        <option value="8">8 børn</option>
+                        <option value="9">9 børn</option>
+                        <option value="10">10 børn</option>
+                    </select>
+                    <div class="checkBox"><input type="checkbox"><span> Tilmeld nyhedsbrev.</span></div>
+                        <div class="checkBox"><input type="checkbox" required><span> Jeg har læst og accepterer betingelserne for medlemskab og betaling.</span></div>
+                    <button type="submit" class="largeBtn submit">Fortsæt <i class="fa fa-chevron-right"></i></button>
+                </form>
         </div>
     </div>
 
     <div class="container">
         <div id="images">
-            <h1>If you have any question or query you can contact us at <br>talkerscode@gmail.com <br><br>or you can fill the form below</h1>
-            <input type="text" placeholder="Name">
-            <textarea placeholder="Message"></textarea>
-            <input type="submit" value="SEND">
         </div>
     </div>
 

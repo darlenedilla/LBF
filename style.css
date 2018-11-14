@@ -83,14 +83,13 @@ body {
 }
 
 .tilbageknap {
-  display:inline-block;
   border:none;
   -webkit-shadow:none;
   background-color:#fcfcfc;
   color:black;
   height:40px;
   width:100px;
-  margin-top:20px;
+  float: left;
   padding:5px;
   cursor:pointer;
 }

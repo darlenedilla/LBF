@@ -113,7 +113,7 @@ body{
 }
 
 .colorCode{
-    width: 100px;
+    width: 100%;
     height: 100px;
     border-radius: 5px;
     background-color: grey;
@@ -229,6 +229,11 @@ span, p {
     width: 100px;
 }
 
+.codeSnippet code{
+    user-select: text;
+    -webkit-user-select: text;
+}
+
 strong{
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -248,13 +253,15 @@ strong{
     padding:10px;
     display: block;
     width:30%;
+    position: relative;
+    left: 1%;
   }
 
 #CTAWrapper {
-  position:absolute;
+  position:relative;
   z-index:0;
-  top:1550px;
-  left:30%;
+  top:-110%;
+  left:10%;
   bottom:0;
 }
 
@@ -283,8 +290,8 @@ strong{
 
 .sampleImg {
   position:absolute;
-  width:500px;
-  height:500px;
+  width:350px;
+  height:350px;
   left:30%;
   margin-top:20px;
 }
@@ -292,12 +299,22 @@ strong{
 /* OVERLAY */
 
 .gridWrapperNewsStyleGuide {
-  position:absolute;
-  left:30%;
+  position:relative;
+  left:25%;
   height:500px;
   width:500px;
   margin-top:300px;
 }
+
+.grid-img{
+    height: 350px;
+    width: 350px;
+}
+
+.gridOverlay{
+    width: 350px;
+}
+
 
 .overlayCodeBox {
   margin-top:300px;

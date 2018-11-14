@@ -370,7 +370,7 @@ nav img {
 
 /* mini - menu css - NANNA */
 #mini-menu {
-  margin-top:35px;
+  margin-top:34px;
   position:relative;
   display:block;
   width:100%;
@@ -681,12 +681,9 @@ text-decoration:underline;
   display:none;
 }
 
-.reminder {
-  position:relative;
-  border-radius:5px;
-  margin-bottom:15px;
-}
 
+<<<<<<< HEAD
+=======
 /* Back to top knap*/
 /* Style the back-to-top floating button */
 .sf-back-to-top {
@@ -761,6 +758,7 @@ a.sf-back-to-top .arrow:before {
     color: #fcfcfc;
     top: 5px;
 }
+>>>>>>> e54423cdb1678da929ad710368985c26f9bdb384
 /* 404 PAGE CSS */
 #fejlBody {
   width:90%;
@@ -789,6 +787,16 @@ a.sf-back-to-top .arrow:before {
 
 .loadingIcon {
     -webkit-animation: rotate 6s linear infinite;
+    animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
 }
 
 @-webkit-keyframes rotate {

@@ -85,14 +85,13 @@ body {
 .tilbageknap {
   display:inline-block;
   border:none;
-  shadow:none;
+  -webkit-shadow:none;
   background-color:#fcfcfc;
   color:black;
   height:40px;
   width:100px;
   margin-top:20px;
   padding:5px;
-  float:left;
   cursor:pointer;
 }
 .tilbageknap i {
@@ -682,84 +681,6 @@ text-decoration:underline;
   display:none;
 }
 
-
-<<<<<<< HEAD
-=======
-/* Back to top knap*/
-/* Style the back-to-top floating button */
-.sf-back-to-top {
-    background-color: #50A1CB; /* button color */
-    color: #fcfcfc; /* text/arrow color */
-    display: none;
-    z-index: 999;
-    /* float in bottom right corner */
-    /* 20 pixels from edge */
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    /* size of button is 50 pixels*/
-    width: 50px;
-    height: 50px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    /* round button */
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-}
-
-a.sf-back-to-top {
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 12px;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1.6;
-    padding-left: 2px;
-    padding-top: 4px;
-}
-
-a.sf-back-to-top .arrow:before {
-    content: "\e02d";
-    font-family: 'squarespace-ui-font';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1;
-    speak: none;
-    -webkit-font-smoothing: antialiased;
-    text-align: center;
-    display: block;
-    vertical-align: middle;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    cursor: pointer;
-    margin-left: -4px;
-}
-#return-to-top i {
-    color: #fcfcfc;
-    margin: 0;
-    position: relative;
-    left: 16px;
-    top: 13px;
-    font-size: 19px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-#return-to-top:hover {
-    background: rgba(0, 0, 0, 0.9);
-}
-#return-to-top:hover i {
-    color: #fcfcfc;
-    top: 5px;
-}
->>>>>>> e54423cdb1678da929ad710368985c26f9bdb384
 /* 404 PAGE CSS */
 #fejlBody {
   width:90%;

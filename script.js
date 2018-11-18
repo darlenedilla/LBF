@@ -166,37 +166,48 @@ var getParams = function (url) {
 
   // toggle menu SCRIPT //
 
+  //Denne funktion hører til burgermenuen
   function toggleMenu(){
-    var menuList = document.getElementById('menuList');
+    //Her laves variablerne menuList og searchList, som består af elementet med id=menuList og id=searchList
+    var menuList = document.getElementById('menuList'); 
     var searchList = document.getElementById('searchList');
 
+    //Her tjekker vi alle classes igennem som sidder på menuList for at se om "active" er en af dem
     if (menuList.classList.contains('active')) {
       menuList.classList.remove('active');
     }
     else{
       menuList.classList.add('active');
     }
+    //Når man trykker på burgermenuen skal den altid fjerne class'en active fra søgefunktionen
     searchList.classList.remove('active');
   }
 
   function toggleSearch(){
+    //Her laver vi igen varibler ud fra id
     var menuList = document.getElementById('menuList');
     var searchList = document.getElementById('searchList');
 
+    //Her tjekker vi alle classes på searchList igennem for at se om active er en af dem
     if (searchList.classList.contains('active')) {
       searchList.classList.remove('active');
     }
     else{
       searchList.classList.add('active');
     }
+    //Når man trykker på søgeikonet, så skal den altid fjerne class'en active fra burgermenuen
     menuList.classList.remove('active');
   }
 
   function toggleClass(){
+    //Her laves variblen toggle ud fra id="toggle"
     var toggle = document.getElementById('toggle');
+    /*toggle funktionen (den der står efter classList.) 
+    fjerner og tilføjer class'en activetoggle når man klikker på den*/
     toggle.classList.toggle('activetoggle');
   }
 
+  //Denne funktion er faktisk overflødig fordi ovenstående både add'er og remove'er
   function removeClass(){
     var toggle = document.getElementById('toggle');
     toggle.classList.remove('activetoggle');

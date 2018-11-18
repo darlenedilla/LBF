@@ -213,46 +213,10 @@ var getParams = function (url) {
     toggle.classList.remove('activetoggle');
   }
 
-  
-
-  /*$('.toggle').click(function(){
-    $('.toggle').toggleClass('activetoggle')
-  });
-
-  $('.fa-search').click(function(){
-    $('.toggle').removeClass('activetoggle')
-  })*/
-
-
   $(document).ready(function(){
     $(".hamburger-btn .fa-times").hide();
-
-    /*$(".toggle").click(function(){
-      if($(".menuList").hasClass("active")){
-        $(".menuList").removeClass("active");
-        console.log("Test")
-      }
-      else{
-        $(".menuList").addClass("active");
-      }
-      $(".searchList").removeClass("active");
-      console.log("Test2");
-    });*/
-
-  /*$(".fa-search").click(function(){
-    if($(".searchList").hasClass("active")){
-      $(".searchList").removeClass("active");
-    }
-    else{
-      $(".searchList").addClass("active");
-    }
-    $(".menuList").removeClass("active");
-    console.log("Hello world!")
-  });*/
-
-  // BURGER MENU ANIMATION //
   });
-  
+
 
 
   // CINDY BETINGELSER SCRIPT //
@@ -295,4 +259,3 @@ var getParams = function (url) {
   }
 
 }
-
